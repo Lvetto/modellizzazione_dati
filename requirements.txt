@@ -1,0 +1,9 @@
+astropy
+numpy
+emcee
+scipy
+matplotlib
+corner
+ipykernel
+ipympl
+tqdm
