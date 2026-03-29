@@ -58,11 +58,11 @@ Limitandoci al piano galattico ($b=0$), il contributo della rotazione galattica 
 
 Dove $R_\odot\simeq 8.12$ kpc è la distanza del sole dal CG e $R_i$ è la distanza della stella i-esima dal CG.
 
-I valori di $R_i$ e $V_{ROT}$ possono essere ricavati dalla geometria del sistema, come mostrato in Figura \ref{fig:measures}, ottenendo le relazioni:
+I valori di $R_i$ e $V_{rad}^{ROT}$ possono essere ricavati dalla geometria del sistema, come mostrato in Figura \ref{fig:measures}, ottenendo le relazioni:
 
 % controllare le formule anche se dovrebbero andare bene
 \[ R_i = \sqrt{d^2+R_\odot^2 - 2dR_\odot\cos(l)} \]
-\[ V_{ROT} = V_{rot} \left( \frac{R_\odot}{R_i} - 1 \right) \sin(l). \]
+\[ V_{rad}^{ROT} = V_{rot} \left( \frac{R_\odot}{R_i} - 1 \right) \sin(l). \]
 
 % Diagramma della costruzione geometrica per le proiezioni e il calcolo degli angoli.
 % un triangolo con il sole, il cg e una stella. I lati del triangolo solo R_\odot, R_i e d. Gli angoli sono l tra R_\odot e d, \alpha tra R_i e d, e \beta il complementare di \alpha
@@ -116,6 +116,7 @@ I valori di $R_i$ e $V_{ROT}$ possono essere ricavati dalla geometria del sistem
         
         
     \end{tikzpicture}
+    % aggiungere qualche dettaglio in didascalia. In particolare le relazioni usate per gli angoli e magari un minimo di trigonometria.
     \caption{Costruzione geometrica per il calcolo delle velocità nel piano galattico.}\label{fig:measures}
     
 \end{figure}
@@ -135,9 +136,9 @@ L'estensione del modello al caso tridimensionale, con $b \neq 0$, è immediata e
 
 % controllare anche i nomi delle sezioni. Un'opzione forse migliore sarebbe fare una sezione modello divisa in modello fisico e modello statistico.
 \section{Analisi statistica: MCMC e inferenza bayesiana}
-Per stimare i parametri del modello, è stata adottata una procedura di inferenza bayesiana basata su Markov Chain Monte Carlo (MCMC), implementata attraverso la libreria \texttt{emcee}. L'obiettivo è quello di campionare la distribuzione a posteriori dei parametri $V_{rot}$, $U_\odot$, $V_\odot$ e $W_\odot$ dato il dataset di {\it Gaia}.
+Per stimare i parametri del modello, abbiamo applicato una procedura di inferenza bayesiana basata su Markov Chain Monte Carlo (MCMC), implementata attraverso la libreria \texttt{emcee}. L'obiettivo è quello di campionare la distribuzione a posteriori dei parametri $V_{rot}$, $U_\odot$, $V_\odot$ e $W_\odot$ dato il dataset di {\it Gaia}.
 
-La funzione di verosimiglianza è stata definita assumendo errori gaussiani indipendenti sui dati di $V_{rad}$ forniti da {\it Gaia}. La deviazione standard totale $\sigma_{tot}$ è stata calcolata combinando l'errore riportato da {\it Gaia} con l'incertezza derivante dalla misura della parallasse, attraverso la formula:
+La funzione di verosimiglianza è stata definita assumendo errori gaussiani indipendenti sui dati di $V_{rad}$ forniti da {\it Gaia}. La deviazione standard totale $\sigma_{tot}$ è stata calcolata combinando l'errore riportato dl dataset e l'incertezza derivante dalla misura della parallasse, attraverso la formula:
 \[ \sigma_{tot} = \sqrt{\sigma_{Gaia}^2 + \left( \frac{\partial V_{rad}}{\partial \varpi} \sigma_\varpi \right)^2}. \]
 % vogliamo aggiungere anche la sigma intrinsenca che avevamo messo all'inizio? A questo punto sarebbe solo un termine additivo e un parametro in più nell'inferenza
 
