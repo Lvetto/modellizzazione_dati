@@ -144,10 +144,52 @@ La funzione di verosimiglianza è stata definita assumendo errori gaussiani indi
 Il valore di $\frac{\partial V_{rad}}{\partial \varpi}$ dipende da $V_{rot}$. Per questo motivo abbiamo diviso l'analisi in due fasi:
 \begin{itemize}
     \item Nella prima fase abbiamo inizializzato i walker con valori casuali (propagando l'errore usando un valore fissato di $V^*_{rot} = 100 km/s$). Lo scopo di questa fase è quello di identificare la zona ad alta probabilità della distribizione a posteriori e permettere una stima più accurata di $V^*_{rot}$ da usare nella seconda fase.
+    \item La seconda fase, più lunga, inizializza i walker secondo la distribuzione a posteriori ottenuta nella prima e utilizza la stima di $V^*_{rot}$ per calcolare $\sigma_{tot}$ in modo più accurato.
 \end{itemize}
 
+Il prior in entrambi i casi è stato scelto come uniforme, con i seguenti intervalli di validità:
+\begin{itemize}
+    \item $V_{rot} \in [0, 400]$ km/s
+    \item $U_\odot, V_\odot, W_\odot \in [-50, 50]$ km/s
+\end{itemize}
+
+L'analisi dei risultati è stata condotta calcolando il tempo di autocorrelazione $\tau$ per ogni parametro, scartando i dati iniziali per un intervallo di burn-in pari a $2\tau$ e applicando un thinning di $0.5\tau$ per eliminare la ridondanza statistica. I parametri ottimali sono stati estratti come mediana della distribuzione a posteriori, mentre le incertezze sono state stimate tramite il 16° e l'84° percentile, fornendo un intervallo di confidenza al 68\%.
+
+\section{Risultati}
+I risultati ottenuti per i parametri $V_{rot}$, $U_\odot$, $V_\odot$ e $W_\odot$ sono riportati in Tabella \ref{tab:risultati_mcmc}.
+
+Notiamo che i valori delle velocità del sole rispetto al LSR sono negativi, a causa della scelta del sistema di coordinate usato.
+
+I valori ottenuti sono in accordo con le stime presenti in letteratura, che indicano una velocità di rotazione del sole attorno al CG di circa $220$ km/s e velocità peculiari del sole rispetto al LSR dell'ordine di $10$ km/s per $U_\odot$, $20$ km/s per $V_\odot$ e $7$ km/s per $W_\odot$. Tuttavia, è importante notare che i valori ottenuti presentano incertezze molto piccole, il che potrebbe essere indicativo di un errore sistematico non considerato nel modello o di una sottostima dell'incertezza nei dati di {\it Gaia}. % infatti potrebbe valere la pena fare una run con una sigma aggiuntiva e vedere se abbiamo risutlati più sensati.
+% serve anche trovare qualche reference da citare per i valori accettati
+
+% a me non sembrano i risultati corretti. Mi ricordo un 220km/s per la v_rot. Controllare!!
+% vogliamo mostrare i risultati per la versione 2d e 3d? in teoria 2d v_rot viene meglio
+\begin{table}[h!]
+    \centering
+    \label{tab:risultati_mcmc}
+    \begin{tabular}{lcc}
+    \hline
+    \hline
+    \textbf{Parametro} & \textbf{Best-fit} & \textbf{Incertezza ($\pm 1\sigma$)} \\
+    \hline
+    $V_{rot}$ & $206.05 \text{ km/s}$ & $0.16 \text{ km/s}$ \\
+    $U_\odot$  & $-10.09 \text{ km/s}$ & $0.01 \text{ km/s}$ \\
+    $V_\odot$ & $-22.81 \text{ km/s}$ & $0.01 \text{ km/s}$ \\
+    $W_\odot$ & $-7.11 \text{ km/s}$  & $0.01 \text{ km/s}$ \\
+    \hline
+    \hline
+    \end{tabular}
+\end{table}
 
 
+% rimangono da aggiungere un tot di grafici e tutta la bibliografia.
 
+% come grafici dovremmo mettere almeno:
+% - corner plot con i parametri?
+% - mappa galattica, nostra vs Gaia
+% - v_rad nostre vs v_rad Gaia
+% - v_rot vs R con i nostri dati e quelli di Gaia?
+% dovremmo avere tutto nei notebook in teoria
 
 \end{document}
