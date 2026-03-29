@@ -192,4 +192,20 @@ I valori ottenuti sono in accordo con le stime presenti in letteratura, che indi
 % - v_rot vs R con i nostri dati e quelli di Gaia?
 % dovremmo avere tutto nei notebook in teoria
 
+
+% questa non lho ancora guardata
+\section{Stima della Massa Galattica}
+Al fine di stimare la massa galattica, è stata introdotta una modifica nel codice, introducendo una dipendenza dal raggio nella formula per $V_{rot}$, che quindi diventa:
+\begin{equation}
+    V_{rot}(R) = V_\odot\left( \frac{R}{R_\odot}\right)^\beta
+\end{equation}
+A questo punto, campionando la distribuzione dei nuovi parametri liberi campionamento della distribuzione a posteriori dei parametri liberi 
+$(V_\odot,U_\odot,W_\odot,\beta)$, è possibile determinare la legge di potenza per $V_{rot}$ attraverso $\beta$. Dal risultato di $\beta$ è possibile inferire la massa della Via Lattea attraverso la legge:
+\begin{equation}
+    M = R_G \frac{V_{rot}(R_G)^2}{G}
+\end{equation}
+Dove $R_G$ rappresenta il raggio della Via Lattea, considerato noto a $20kpc$ come in letteratura, e $G$ la costante di gravitazione universale. Inoltre, il parametro $\beta$ permette anche di inferire informazioni sul tipo di massa presente in Galassia. Nel modello kepleriano il valore aspettato è $\beta = 0.5$, coerente con una diminuzione delle velocità man mano che ci si allontana dal centro galattico. Valori diversi di $\beta$ indicano quindi una porzione di massa mancante, per giustificare la legge di potenza, che è comunemente interpretata come materia oscura. 
+
+
+
 \end{document}
