@@ -69,7 +69,6 @@
       \verb{eprint}
       \verb 1810.09466
       \endverb
-      \keyw{Galaxy: fundamental parameters,Galaxy: halo,Galaxy: kinematics and dynamics,Galaxy: structure,Astrophysics - Astrophysics of Galaxies}
     \endentry
     \entry{GaiaDR2}{article}{}
       \true{moreauthor}
@@ -133,37 +132,6 @@
       \field{year}{2016}
       \verb{doi}
       \verb 10.1051/0004-6361/201629272
-      \endverb
-    \endentry
-    \entry{Huang2015LSR}{article}{}
-      \true{moreauthor}
-      \true{morelabelname}
-      \name{author}{1}{}{%
-        {{hash=cae9da35ae12a6cbd407d07b86b4e18c}{%
-           family={Huang},
-           familyi={H\bibinitperiod},
-           given={Y.},
-           giveni={Y\bibinitperiod}}}%
-      }
-      \strng{namehash}{163d2cf5fe8e59a79268f7871c4ee263}
-      \strng{fullhash}{163d2cf5fe8e59a79268f7871c4ee263}
-      \strng{bibnamehash}{163d2cf5fe8e59a79268f7871c4ee263}
-      \strng{authorbibnamehash}{163d2cf5fe8e59a79268f7871c4ee263}
-      \strng{authornamehash}{163d2cf5fe8e59a79268f7871c4ee263}
-      \strng{authorfullhash}{163d2cf5fe8e59a79268f7871c4ee263}
-      \field{sortinit}{H}
-      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{MNRAS}
-      \field{number}{1}
-      \field{title}{Determination of the local standard of rest using the LSS-GAC DR1}
-      \field{volume}{449}
-      \field{year}{2015}
-      \field{pages}{162\bibrangedash 174}
-      \range{pages}{13}
-      \verb{doi}
-      \verb 10.1093/mnras/stv204
       \endverb
     \endentry
     \entry{Jiao2023}{article}{}
@@ -332,7 +300,6 @@
       \verb{doi}
       \verb 10.1111/j.1365-2966.2010.16253.x
       \endverb
-      \keyw{Galaxy: solar neighbourhood,Galaxy: kinematics and dynamics}
     \endentry
   \enddatalist
 \endrefsection

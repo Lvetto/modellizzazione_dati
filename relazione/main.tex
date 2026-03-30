@@ -31,7 +31,7 @@
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{6pt}   % risistemare alla fine!!!!
 
-\title{Relazione 1}
+\title{Relazione 1, Gruppo G}
 
 \author{
 Luca Vettore, Enrico Vianelli, Lorenzo Zanoli
@@ -159,7 +159,7 @@ Come funzione di verosimiglianza abbiamo usato distribuzione una Gaussiana, defi
 Il valore di $\frac{\partial V_{rad}}{\partial \varpi}$ dipende da $V_{rot}$. Per questo motivo abbiamo diviso l'analisi in due fasi:
 % sistemare reference spiegando il guess iniziale
 \begin{itemize}
-    \item Nella prima fase abbiamo inizializzato $32$ walkers con valori arbitrari dei parametri, ma dell'ordine di grandezza dei valori riportati in letteratura \cite{Huang2015LSR} (propagando l'errore usando un valore fissato di $V^*_{rot} = 100 km/s$, con ordine di grandezza in accordo con la dispersione delle velocità radiali dei dati). Lo scopo di questa fase è quello di identificare la zona ad alta probabilità della distribuzione a posteriori e permettere una stima più accurata di $V^*_{rot}$ da usare nella seconda fase. In questa prima run abbiamo usato $200$ iterazioni.
+    \item Nella prima fase abbiamo inizializzato $32$ walkers con valori arbitrari dei parametri(propagando l'errore usando un valore fissato di $V^*_{rot} = 100 km/s$, con ordine di grandezza in accordo con la dispersione delle velocità radiali dei dati). Lo scopo di questa fase è quello di identificare la zona ad alta probabilità della distribuzione a posteriori e permettere una stima più accurata di $V^*_{rot}$ da usare nella seconda fase. In questa prima run abbiamo usato $200$ iterazioni.
     \item La seconda fase, più lunga, inizializza $32$ walkers  secondo la distribuzione a posteriori ottenuta nella prima e utilizza la stima di $V^*_{rot}$ per calcolare $\sigma_{tot}$ in modo più accurato. In questa fase, la simulazione MCMC è stata condotta con $5000$ iterazioni, permettendo una stima più accurata dei parametri e delle loro incertezze.
 \end{itemize}
 
@@ -229,18 +229,26 @@ Confrontando la Figura \ref{mappa_gaia} e la Figura \ref{mappa_modello}, possiam
 \end{figure}
 
 
-% molto abbozzata. Ho semplificato perché a prescindere dal codice che converge o meno non penso sia fattibile quel conto da sti dati, almeno con risultati sensati. Possiamo fare una stima della massa entro un disco di raggio fissato a partire dalla legge di newton e poi usare il fatto che V_rot è const per dire che c'é materia oscura distribuita in tutto il disco
+\section{Stima della Massa Galattica}
+Sulla base dei parametri cinematici ottenuti, è possibile stimare la massa della Via Lattea racchiusa entro l'orbita solare ($M_{< R_\odot}$). Assumendo che la distribuzione di massa totale (composta da stelle, gas e materia oscura) abbia una simmetria approssimativamente sferica, la prima legge di Newton implica che, per un orbita circolare, la forza gravitazionale debba essere uguale all'accelerazione centripeta.
+Utilizzando il valore di $V_{rot} = 204.03 \pm 0.15$ km/s ottenuto dal modello 3D si ottiene:
+\[ M\left( < R_\odot \right) = \frac{V_{rot}^2 R_\odot}{G} = (0.786 \pm 0.001) \cdot 10^{11} M_\odot, \]
+dove $G=6.6743 \times 10^{-11} \text{ m}^3 \text{kg}^{-1} \text{s}^{-2}$ e $M_\odot=1.9891\times 10^{30}$ kg. Questo risultato è in ottimo accordo con le stime recenti presenti in letteratura, che pongono la massa entro il raggio solare nell'intervallo $[0.7, 1.0] \cdot 10^{11} M_\odot$ \cite{Jiao2023}.
+
+È importante sottolineare che il nostro modello assume una curva di rotazione piatta ($V_{rot}$ indipendente da $R$). In un sistema puramente kepleriano, dove la massa è concentrata al centro (modello puntiforme), si avrebbe $V_{rot}\propto R^{-1/2}$. La persistenza di una velocità di rotazione costante implica che la massa racchiusa cresca linearmente con il raggio ($M(R) \propto R$). Questo scenario corrisponde a un profilo di densità spaziale del tipo $\rho(R) \propto R^{-2}$, tipico della sfera singolare isoterma. Poiché la densità della materia barionica (stelle e gas) decade molto più rapidamente con il raggio, tale andamento fornisce una prova indiretta della presenza di un alone esteso di materia oscura che domina il potenziale gravitazionale anche nelle regioni interne della Galassia.
+
+\iffalse
 \section{Stima della Massa Galattica}
 Assumendo per semplicità che la massa della Galassia sia distribuita con simmetria sferica (o trattandola come una massa puntiforme centrale per il Teorema dei Gusci di Newton), la forza gravitazionale deve equilibrare la forza centripeta necessaria per mantenere il Sole (e le stelle del LSR) in un'orbita circolare.
 Pertanto è possibile,  utilizzando il valore di $V_{rot}$ nella Tabella \ref{tab:risultati_mcmc}, fare una stima della massa della Galassia racchiusa nell'orbita del sole:
-\[ M\left( < R_\odot \right) = \frac{V_{rot}^2R_\odot}{G} = 0.77 \cdot 10^{11} M_\odot,\]
+\[ M\left( < R_\odot \right) = \frac{V_{rot}^2R_\odot}{G} = (0.786 \pm 0.003) \cdot 10^{11} M_\odot,\]
 dove $G=6.6743 \times 10^{-11} m^3 kg^{-1} s^{-2}$ è la costante di gravitazione universale e $M_\odot=1.9891\times 10^{30} kg$ è la massa solare.
 Questo valore è in linea con il valore accettato di $M\left( < R_\odot \right)\in\left[0.7, 1\right] \cdot 10^{11} M_\odot$ \cite{Jiao2023}.
 
 La $V_{rot}$ trovata non dipende da $R$, suggerendo quindi un andamento del tipo
 $ \rho(R) \propto R^{-2} $, non compatibile con una massa distribuita uniformemente nel disco galattico. Questo risultato suggerisce quindi la presenza di una distribuzione di materia non osservata (non barionica) estesa.
 
-
+\fi
 
 \iffalse
 Al fine di stimare la massa galattica, è stata introdotta una modifica nel codice, introducendo una dipendenza dal raggio nella formula per $V_{rot}$, che quindi diventa:
