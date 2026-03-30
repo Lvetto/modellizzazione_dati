@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.3.28)  30 MAR 2026 11:22
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.3.28)  30 MAR 2026 11:52
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -835,17 +835,17 @@ Overfull \hbox (2.63718pt too wide) detected at line 95
 <../Corner_plot.png, id=88, 701.019pt x 701.019pt>
 File: ../Corner_plot.png Graphic file (type png)
 <use ../Corner_plot.png>
-Package pdftex.def Info: ../Corner_plot.png  used on input line 208.
+Package pdftex.def Info: ../Corner_plot.png  used on input line 209.
 (pdftex.def)             Requested size: 236.84843pt x 236.84576pt.
 <../Mollweide_plot-DATA.png, id=90, 867.24pt x 505.89pt>
 File: ../Mollweide_plot-DATA.png Graphic file (type png)
 <use ../Mollweide_plot-DATA.png>
-Package pdftex.def Info: ../Mollweide_plot-DATA.png  used on input line 215.
+Package pdftex.def Info: ../Mollweide_plot-DATA.png  used on input line 216.
 (pdftex.def)             Requested size: 236.84843pt x 138.15912pt.
 <../Mollweide_plot-MODEL.png, id=91, 867.24pt x 505.89pt>
 File: ../Mollweide_plot-MODEL.png Graphic file (type png)
 <use ../Mollweide_plot-MODEL.png>
-Package pdftex.def Info: ../Mollweide_plot-MODEL.png  used on input line 222.
+Package pdftex.def Info: ../Mollweide_plot-MODEL.png  used on input line 223.
 (pdftex.def)             Requested size: 236.84843pt x 138.15912pt.
 
 
@@ -854,7 +854,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 <../Distrubuzione_velocità_radiali.png, id=94, 867.24pt x 433.62pt>
 File: ../Distrubuzione_velocità_radiali.png Graphic file (type png)
 <use ../Distrubuzione_velocità_radiali.png>
-Package pdftex.def Info: ../Distrubuzione_velocità_radiali.png  used on input line 230.
+Package pdftex.def Info: ../Distrubuzione_velocità_radiali.png  used on input line 231.
 (pdftex.def)             Requested size: 236.84843pt x 118.4221pt.
 
 Underfull \vbox (badness 1057) has occurred while \output is active []
