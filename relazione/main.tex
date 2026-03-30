@@ -1,15 +1,32 @@
 \documentclass[twocolumn]{article}
 
-%\usepackage[italian]{babel}
+\usepackage[italian]{babel}
 \usepackage{graphicx}
+\usepackage{geometry}    % For custom margins
 \usepackage{amsmath,amsfonts,amssymb}
 \usepackage{hyperref}   % per \url
-
+\usepackage{xurl}       % url lunghi 
 % per fare i diagrammi
 \usepackage{tikz}
+
+% per la bibliografia
+
+\usepackage[T1]{fontenc}    % Essenziale per i caratteri italiani
+\usepackage[utf8]{inputenc}
+\usepackage{csquotes}       % Consigliato con biblatex e babel
+\usepackage{biblatex}   
+
+\addbibresource{Bibliografia.bib}
+
 \usetikzlibrary{angles, quotes, calc}
-
-
+% Set margins
+\geometry{
+    a4paper,
+    top=2cm,
+    bottom=2cm,
+    left=2cm,
+    right=2cm,
+}
 % rimuove l'indentazione all'inizio dei paragrafi e aggiunge spazio tra i paragrafi
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{6pt}   % risistemare alla fine!!!!
@@ -32,10 +49,10 @@ Lo scopo di questa analisi è quello di determinare attraverso tecniche di infer
 
 \subsection{I dati: GAIA DR2}
 
-Questo lavoro si basa su dati forniti dalla missione {\it Gaia} (\url{https://www.cosmos.esa.int/gaia}) del European Space Agency (ESA), processati dal {\it Gaia} Data Processing and Analysis Consortium (DPAC, \url{https://www.cosmos.esa.int/web/gaia/dpac/consortium}). I fondi per il DPAC sono stati forniti da istituzioni nazionali, in particolare le istituzioni partecipanti al {\it Gaia} Multilateral Agreement.
+Questo lavoro si basa su dati forniti dalla missione {\it Gaia} \cite{GaiaMission2016} (\url{https://www.cosmos.esa.int/gaia}) del European Space Agency (ESA), processati dal {\it Gaia} Data Processing and Analysis Consortium (DPAC, \url{https://www.cosmos.esa.int/web/gaia/dpac/consortium}). I fondi per il DPAC sono stati forniti da istituzioni nazionali, in particolare le istituzioni partecipanti al {\it Gaia} Multilateral Agreement.
 
 % controllare siano davvero 3 milioni!!!
-In particolare, abbiamo utilizzato i dati della terza release (DR3) di {\it Gaia}, che include informazioni su $3000000$ di stelle della via lattea. La nostra analisi utilizza la latitudine $l$ e longitudine $b$ galattica, la parallasse $\varpi$ e la velocità lungo la linea di vista $V_{rad}$, con i relativi errori.
+In particolare, abbiamo utilizzato i dati della seconda release (DR2) di {\it Gaia} \cite{GaiaDR2}, \cite{GaiaDR2Parallaxes}, \cite{GaiaDR2RadialVelocities} che includono informazioni su $3000000$ di stelle della via lattea. La nostra analisi utilizza la latitudine $l$ e longitudine $b$ galattica, la parallasse $\varpi$ e la velocità lungo la linea di vista $V_{rad}$, con i relativi errori.
 
 
 \subsection{Le coordinate galattiche e i parametri cinematici}
@@ -148,6 +165,6 @@ Il valore di $\frac{\partial V_{rad}}{\partial \varpi}$ dipende da $V_{rot}$. Pe
 
 
 
-
+\printbibliography
 
 \end{document}

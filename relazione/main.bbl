@@ -1,0 +1,157 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{GaiaDR2}{article}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{2}{}{%
+        {{hash=86a38bc669f6b96a1b3657c840098333}{%
+           family={{Gaia Collaboration}},
+           familyi={G\bibinitperiod}}}%
+        {{hash=12425f8aa1784bdbe9321c97b37cd012}{%
+           family={{Brown}},
+           familyi={B\bibinitperiod},
+           given={A.\bibnamedelimi G.\bibnamedelimi A.},
+           giveni={A\bibinitperiod\bibinitdelim G\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \strng{namehash}{6b51e4171a5f570970722f12e7750d23}
+      \strng{fullhash}{6b51e4171a5f570970722f12e7750d23}
+      \strng{bibnamehash}{6b51e4171a5f570970722f12e7750d23}
+      \strng{authorbibnamehash}{6b51e4171a5f570970722f12e7750d23}
+      \strng{authornamehash}{6b51e4171a5f570970722f12e7750d23}
+      \strng{authorfullhash}{6b51e4171a5f570970722f12e7750d23}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eid}{A1}
+      \field{journaltitle}{Astronomy \& Astrophysics}
+      \field{title}{{Gaia Data Release 2. Summary of the contents and survey properties}}
+      \field{volume}{616}
+      \field{year}{2018}
+      \verb{doi}
+      \verb 10.1051/0004-6361/201833051
+      \endverb
+    \endentry
+    \entry{GaiaMission2016}{article}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{2}{}{%
+        {{hash=86a38bc669f6b96a1b3657c840098333}{%
+           family={{Gaia Collaboration}},
+           familyi={G\bibinitperiod}}}%
+        {{hash=e96f7a4c89c63145e1cc74a282969a16}{%
+           family={{Prusti}},
+           familyi={P\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{5409895cd1a126bc1dd77622a4693b28}
+      \strng{fullhash}{5409895cd1a126bc1dd77622a4693b28}
+      \strng{bibnamehash}{5409895cd1a126bc1dd77622a4693b28}
+      \strng{authorbibnamehash}{5409895cd1a126bc1dd77622a4693b28}
+      \strng{authornamehash}{5409895cd1a126bc1dd77622a4693b28}
+      \strng{authorfullhash}{5409895cd1a126bc1dd77622a4693b28}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eid}{A1}
+      \field{journaltitle}{Astronomy \& Astrophysics}
+      \field{title}{{The Gaia mission}}
+      \field{volume}{595}
+      \field{year}{2016}
+      \verb{doi}
+      \verb 10.1051/0004-6361/201629272
+      \endverb
+    \endentry
+    \entry{GaiaDR2RadialVelocities}{article}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{2}{}{%
+        {{hash=1bc327a0b98bb32be7df942a36261fb4}{%
+           family={{Katz}},
+           familyi={K\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod}}}%
+        {{hash=8fd124cdcc23a51f44db965e201eb34e}{%
+           family={{Sartoretti}},
+           familyi={S\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{5620c596888529bedda8748758e6bd17}
+      \strng{fullhash}{5620c596888529bedda8748758e6bd17}
+      \strng{bibnamehash}{5620c596888529bedda8748758e6bd17}
+      \strng{authorbibnamehash}{5620c596888529bedda8748758e6bd17}
+      \strng{authornamehash}{5620c596888529bedda8748758e6bd17}
+      \strng{authorfullhash}{5620c596888529bedda8748758e6bd17}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eid}{A5}
+      \field{journaltitle}{Astronomy \& Astrophysics}
+      \field{title}{{Gaia Data Release 2. Properties and validation of the radial velocities}}
+      \field{volume}{616}
+      \field{year}{2018}
+      \verb{doi}
+      \verb 10.1051/0004-6361/201833273
+      \endverb
+    \endentry
+    \entry{GaiaDR2Parallaxes}{article}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{2}{}{%
+        {{hash=7064a03e712568d2e307e9416653616e}{%
+           family={{Luri}},
+           familyi={L\bibinitperiod},
+           given={X.},
+           giveni={X\bibinitperiod}}}%
+        {{hash=12425f8aa1784bdbe9321c97b37cd012}{%
+           family={{Brown}},
+           familyi={B\bibinitperiod},
+           given={A.\bibnamedelimi G.\bibnamedelimi A.},
+           giveni={A\bibinitperiod\bibinitdelim G\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \strng{namehash}{ea08e91046a6f47ff8d47221f7454044}
+      \strng{fullhash}{ea08e91046a6f47ff8d47221f7454044}
+      \strng{bibnamehash}{ea08e91046a6f47ff8d47221f7454044}
+      \strng{authorbibnamehash}{ea08e91046a6f47ff8d47221f7454044}
+      \strng{authornamehash}{ea08e91046a6f47ff8d47221f7454044}
+      \strng{authorfullhash}{ea08e91046a6f47ff8d47221f7454044}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eid}{A9}
+      \field{journaltitle}{Astronomy \& Astrophysics}
+      \field{title}{{Gaia Data Release 2. Using Gaia parallaxes}}
+      \field{volume}{616}
+      \field{year}{2018}
+      \verb{doi}
+      \verb 10.1051/0004-6361/201832964
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
