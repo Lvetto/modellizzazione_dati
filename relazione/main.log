@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.3.28)  30 MAR 2026 11:52
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.3.28)  30 MAR 2026 12:27
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -832,17 +832,17 @@ Overfull \hbox (2.63718pt too wide) detected at line 95
 
 
 ] [2{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
-<../Corner_plot.png, id=88, 701.019pt x 701.019pt>
+<../Corner_plot.png, id=90, 701.019pt x 701.019pt>
 File: ../Corner_plot.png Graphic file (type png)
 <use ../Corner_plot.png>
 Package pdftex.def Info: ../Corner_plot.png  used on input line 209.
 (pdftex.def)             Requested size: 236.84843pt x 236.84576pt.
-<../Mollweide_plot-DATA.png, id=90, 867.24pt x 505.89pt>
+<../Mollweide_plot-DATA.png, id=92, 867.24pt x 505.89pt>
 File: ../Mollweide_plot-DATA.png Graphic file (type png)
 <use ../Mollweide_plot-DATA.png>
 Package pdftex.def Info: ../Mollweide_plot-DATA.png  used on input line 216.
 (pdftex.def)             Requested size: 236.84843pt x 138.15912pt.
-<../Mollweide_plot-MODEL.png, id=91, 867.24pt x 505.89pt>
+<../Mollweide_plot-MODEL.png, id=93, 867.24pt x 505.89pt>
 File: ../Mollweide_plot-MODEL.png Graphic file (type png)
 <use ../Mollweide_plot-MODEL.png>
 Package pdftex.def Info: ../Mollweide_plot-MODEL.png  used on input line 223.
@@ -851,7 +851,7 @@ Package pdftex.def Info: ../Mollweide_plot-MODEL.png  used on input line 223.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<../Distrubuzione_velocità_radiali.png, id=94, 867.24pt x 433.62pt>
+<../Distrubuzione_velocità_radiali.png, id=96, 867.24pt x 433.62pt>
 File: ../Distrubuzione_velocità_radiali.png Graphic file (type png)
 <use ../Distrubuzione_velocità_radiali.png>
 Package pdftex.def Info: ../Distrubuzione_velocità_radiali.png  used on input line 231.
@@ -873,18 +873,18 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 30083 strings out of 474222
- 565955 string characters out of 5748733
+ 30088 strings out of 474222
+ 566122 string characters out of 5748733
  1953975 words of memory out of 5000000
- 51876 multiletter control sequences out of 15000+600000
+ 51880 multiletter control sequences out of 15000+600000
  573344 words of font info for 75 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,12n,93p,1248b,1550s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfcc1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1728.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1000.pfb>
-Output written on main.pdf (4 pages, 1486338 bytes).
+Output written on main.pdf (4 pages, 1493541 bytes).
 PDF statistics:
- 205 PDF objects out of 1000 (max. 8388607)
- 151 compressed objects within 2 object streams
- 26 named destinations out of 1000 (max. 500000)
+ 209 PDF objects out of 1000 (max. 8388607)
+ 155 compressed objects within 2 object streams
+ 27 named destinations out of 1000 (max. 500000)
  97 words of extra memory for PDF output out of 10000 (max. 10000000)
 

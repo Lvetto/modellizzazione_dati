@@ -83,6 +83,37 @@
       \verb 10.1051/0004-6361/201629272
       \endverb
     \endentry
+    \entry{Huang2015LSR}{article}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{hash=cae9da35ae12a6cbd407d07b86b4e18c}{%
+           family={Huang},
+           familyi={H\bibinitperiod},
+           given={Y.},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \strng{namehash}{163d2cf5fe8e59a79268f7871c4ee263}
+      \strng{fullhash}{163d2cf5fe8e59a79268f7871c4ee263}
+      \strng{bibnamehash}{163d2cf5fe8e59a79268f7871c4ee263}
+      \strng{authorbibnamehash}{163d2cf5fe8e59a79268f7871c4ee263}
+      \strng{authornamehash}{163d2cf5fe8e59a79268f7871c4ee263}
+      \strng{authorfullhash}{163d2cf5fe8e59a79268f7871c4ee263}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{MNRAS}
+      \field{number}{1}
+      \field{title}{Determination of the local standard of rest using the LSS-GAC DR1}
+      \field{volume}{449}
+      \field{year}{2015}
+      \field{pages}{162\bibrangedash 174}
+      \range{pages}{13}
+      \verb{doi}
+      \verb 10.1093/mnras/stv204
+      \endverb
+    \endentry
     \entry{GaiaDR2RadialVelocities}{article}{}
       \true{moreauthor}
       \true{morelabelname}

@@ -161,7 +161,7 @@ Come funzione di verosimiglianza è stata usata una Gaussiana, definita assumend
 
 Il valore di $\frac{\partial V_{rad}}{\partial \varpi}$ dipende da $V_{rot}$. Per questo motivo abbiamo diviso l'analisi in due fasi:
 \begin{itemize}
-    \item Nella prima fase abbiamo inizializzato i walker con valori casuali (propagando l'errore usando un valore fissato di $V^*_{rot} = 100 km/s$). Lo scopo di questa fase è quello di identificare la zona ad alta probabilità della distribizione a posteriori e permettere una stima più accurata di $V^*_{rot}$ da usare nella seconda fase.
+    \item Nella prima fase abbiamo inizializzato i walker con valori casuali \cite{Huang2015LSR} (propagando l'errore usando un valore fissato di $V^*_{rot} = 100 km/s$). Lo scopo di questa fase è quello di identificare la zona ad alta probabilità della distribizione a posteriori e permettere una stima più accurata di $V^*_{rot}$ da usare nella seconda fase.
     \item La seconda fase, più lunga, inizializza i walker secondo la distribuzione a posteriori ottenuta nella prima e utilizza la stima di $V^*_{rot}$ per calcolare $\sigma_{tot}$ in modo più accurato.
 \end{itemize}
 
