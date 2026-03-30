@@ -1,18 +1,18 @@
 # Fdb version 4
-["biber main"] 1774888708.54041 "main.bcf" "main.bbl" "main" 1774888820.55523 0
+["biber main"] 1774888708.54041 "main.bcf" "main.bbl" "main" 1774889605.70671 0
   "Bibliografia.bib" 1774888716.98913 3763 c10a61c3ba03f6a64e3f53852eef3a22 ""
-  "main.bcf" 1774888820.38056 108181 c14dc3732463db16bc5b9f88240ecc15 "pdflatex"
+  "main.bcf" 1774889605.58859 108181 c14dc3732463db16bc5b9f88240ecc15 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1774888818.61679 "/home/enrico/Scrivania/MAGISTRALE/Modellizzazione_Dati/ESPERIENZA1-GAIA/modellizzazione_dati/relazione/main.tex" "main.pdf" "main" 1774888820.55547 0
+["pdflatex"] 1774889604.40877 "/home/enrico/Scrivania/MAGISTRALE/Modellizzazione_Dati/ESPERIENZA1-GAIA/modellizzazione_dati/relazione/main.tex" "main.pdf" "main" 1774889605.70749 0
   "../Corner_plot.png" 1774818072.33776 197735 ef256b51a05f1a5545f42cedc87fcd12 ""
   "../Distrubuzione_velocità_radiali.png" 1774861096.50156 31953 717c332ba79be9d817f276db45bae01d ""
   "../Mollweide_plot-DATA.png" 1774858337.6086 723901 32a6d3a8645a287c2b9a9b1a44616419 ""
   "../Mollweide_plot-MODEL.png" 1774858324.83372 424537 df1988b715b03487d895067fa85df549 ""
   "/etc/texmf/web2c/texmf.cnf" 1774709676.5357 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/enrico/Scrivania/MAGISTRALE/Modellizzazione_Dati/ESPERIENZA1-GAIA/modellizzazione_dati/relazione/main.tex" 1774888815.44859 18737 c6bd1fc640da93212bf4d9fbecf899fc ""
+  "/home/enrico/Scrivania/MAGISTRALE/Modellizzazione_Dati/ESPERIENZA1-GAIA/modellizzazione_dati/relazione/main.tex" 1774889604.09958 18800 df9589956a3f11a337a42cb6cb72d8a2 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecbx1000.tfm" 1136768653 3584 2d666ecf6d466d8b007246bc2f94d9da ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecbx1200.tfm" 1136768653 3584 402da0b29eafbad07963b1224b222f18 ""
@@ -215,11 +215,11 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1707919699 40399 f2c302f7d2af602abb742093540a5834 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1774709777.33443 5472669 54eaf61a88b6b7896ebd0dac973cb29c ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1774709833 8214913 9345a06adeaacbcda7b386538d4e4da2 ""
-  "main.aux" 1774888820.37756 4924 424dc207e93ac39b13d319b91563b32c "pdflatex"
+  "main.aux" 1774889605.58559 4924 424dc207e93ac39b13d319b91563b32c "pdflatex"
   "main.bbl" 1774888709.18718 11708 65a88e4fb0303ec566265803dedd802b "biber main"
-  "main.out" 1774888820.37956 1392 b2f29be1956f13d5500bfae7c566a484 "pdflatex"
-  "main.run.xml" 1774888820.38156 2307 70c028350ebc05a67c6d2b8a16d084ba "pdflatex"
-  "main.tex" 1774888815.44859 18737 c6bd1fc640da93212bf4d9fbecf899fc ""
+  "main.out" 1774889605.58759 1392 b2f29be1956f13d5500bfae7c566a484 "pdflatex"
+  "main.run.xml" 1774889605.58859 2307 70c028350ebc05a67c6d2b8a16d084ba "pdflatex"
+  "main.tex" 1774889604.09958 18800 df9589956a3f11a337a42cb6cb72d8a2 ""
   (generated)
   "main.aux"
   "main.bcf"
