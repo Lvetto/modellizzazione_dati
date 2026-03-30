@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.3.28)  30 MAR 2026 08:28
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.3.28)  30 MAR 2026 11:22
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -818,33 +818,73 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 52.
  (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
-) [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}
+)
+Underfull \hbox (badness 1019) in paragraph at lines 71--72
+\T1/cmr/m/n/10 In que-sto mo-del-lo sem-pli-fi-ca-to as-su-mia-mo-che tut-
+ []
 
 
-] [2{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}] (./main.aux)
+Overfull \hbox (2.63718pt too wide) detected at line 95
+[]
+ []
+
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}
+
+
+] [2{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
+<../Corner_plot.png, id=88, 701.019pt x 701.019pt>
+File: ../Corner_plot.png Graphic file (type png)
+<use ../Corner_plot.png>
+Package pdftex.def Info: ../Corner_plot.png  used on input line 208.
+(pdftex.def)             Requested size: 236.84843pt x 236.84576pt.
+<../Mollweide_plot-DATA.png, id=90, 867.24pt x 505.89pt>
+File: ../Mollweide_plot-DATA.png Graphic file (type png)
+<use ../Mollweide_plot-DATA.png>
+Package pdftex.def Info: ../Mollweide_plot-DATA.png  used on input line 215.
+(pdftex.def)             Requested size: 236.84843pt x 138.15912pt.
+<../Mollweide_plot-MODEL.png, id=91, 867.24pt x 505.89pt>
+File: ../Mollweide_plot-MODEL.png Graphic file (type png)
+<use ../Mollweide_plot-MODEL.png>
+Package pdftex.def Info: ../Mollweide_plot-MODEL.png  used on input line 222.
+(pdftex.def)             Requested size: 236.84843pt x 138.15912pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<../Distrubuzione_velocità_radiali.png, id=94, 867.24pt x 433.62pt>
+File: ../Distrubuzione_velocità_radiali.png Graphic file (type png)
+<use ../Distrubuzione_velocità_radiali.png>
+Package pdftex.def Info: ../Distrubuzione_velocità_radiali.png  used on input line 230.
+(pdftex.def)             Requested size: 236.84843pt x 118.4221pt.
+
+Underfull \vbox (badness 1057) has occurred while \output is active []
+
+ [3 <../Corner_plot.png> <../Mollweide_plot-DATA.png> <../Mollweide_plot-MODEL.png> <../Distrubuzione_velocità_radiali.png>] [4
+
+] (./main.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 4938417B7D15DD94A2CAB2AEA8D0F7FF;967.
+(rerunfilecheck)             Checksum: B2F29BE1956F13D5500BFAE7C566A484;1392.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 30024 strings out of 474222
- 564586 string characters out of 5748733
- 1957975 words of memory out of 5000000
- 51832 multiletter control sequences out of 15000+600000
- 571034 words of font info for 72 fonts, out of 8000000 for 9000
+ 30083 strings out of 474222
+ 565955 string characters out of 5748733
+ 1953975 words of memory out of 5000000
+ 51876 multiletter control sequences out of 15000+600000
+ 573344 words of font info for 75 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,10n,93p,780b,1346s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfcc1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1728.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1000.pfb>
-Output written on main.pdf (2 pages, 219799 bytes).
+ 84i,12n,93p,1248b,1550s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfcc1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1728.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1000.pfb>
+Output written on main.pdf (4 pages, 1486338 bytes).
 PDF statistics:
- 150 PDF objects out of 1000 (max. 8388607)
- 111 compressed objects within 2 object streams
- 14 named destinations out of 1000 (max. 500000)
- 53 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 205 PDF objects out of 1000 (max. 8388607)
+ 151 compressed objects within 2 object streams
+ 26 named destinations out of 1000 (max. 500000)
+ 97 words of extra memory for PDF output out of 10000 (max. 10000000)
 
