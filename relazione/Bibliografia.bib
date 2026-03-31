@@ -1,77 +1,110 @@
 % 1. La missione Gaia (Generale)
-@ARTICLE{GaiaMission2016,
-       author = {{Gaia Collaboration} and {Prusti}, T. and others},
-        title = "{The Gaia mission}",
-      journal = {Astronomy \& Astrophysics},
-         year = 2016,
-       volume = {595},
-          eid = {A1},
-          doi = {10.1051/0004-6361/201629272},
+@article{Eilers2019,
+  author        = {{Eilers}, Anna-Christina and {Hogg}, David W. and {Rix}, Hans-Walter and {Ness}, Melissa K.},
+  title         = {{The Circular Velocity Curve of the Milky Way from 5 to 25 kpc}},
+  journal       = {The Astrophysical Journal},
+  year          = 2019,
+  month         = feb,
+  volume        = {871},
+  number        = {1},
+  eid           = {120},
+  pages         = {120},
+  doi           = {10.3847/1538-4357/aaf648},
+  archiveprefix = {arXiv},
+  eprint        = {1810.09466},
+  primaryclass  = {astro-ph.GA},
+  adsnote       = {Provided by the SAO/NASA Astrophysics Data System}
 }
 
 % 2. Il rilascio dati DR2 (Sintesi)
-@ARTICLE{GaiaDR2,
-       author = {{Gaia Collaboration} and {Brown}, A.~G.~A. and others},
-        title = "{Gaia Data Release 2. Summary of the contents and survey properties}",
-      journal = {Astronomy \& Astrophysics},
-         year = 2018,
-       volume = {616},
-          eid = {A1},
-          doi = {10.1051/0004-6361/201833051},
-}
-
-% 3. Specifico per le Velocità Radiali (Katz et al.)
-@ARTICLE{GaiaDR2RadialVelocities,
-       author = {{Katz}, D. and {Sartoretti}, P. and others},
-        title = "{Gaia Data Release 2. Properties and validation of the radial velocities}",
-      journal = {Astronomy \& Astrophysics},
-         year = 2018,
-       volume = {616},
-          eid = {A5},
-          doi = {10.1051/0004-6361/201833273},
-}
-
-% 4. Specifico per l'uso delle Parallassi (Luri et al.)
-@ARTICLE{GaiaDR2Parallaxes,
-       author = {{Luri}, X. and {Brown}, A.~G.~A. and others},
-        title = "{Gaia Data Release 2. Using Gaia parallaxes}",
-      journal = {Astronomy \& Astrophysics},
-         year = 2018,
-       volume = {616},
-          eid = {A9},
-          doi = {10.1051/0004-6361/201832964},
-}
-
-% 5. L'archivio (come richiesto prima)
 @misc{GaiaArchive,
   author       = {{European Space Agency}},
-  title        = "{Gaia ESA Archive}",
+  title        = {{Gaia ESA Archive}},
   howpublished = {\url{https://gea.esac.esa.int/archive/}},
   year         = {2026},
   note         = {Accesso effettuato il 29 marzo 2026}
 }
 
-% 6. Il rilascio dati DR3 (Sintesi)
-@ARTICLE{GaiaDR3,
-       author = {{Gaia Collaboration} and {Vallenari}, A. and {Brown}, A.~G.~A. and {Prusti}, T. and {de Bruijne}, J.~H.~J. and others},
-        title = "{Gaia Data Release 3. Summary of the content and survey properties}",
-      journal = {Astronomy \& Astrophysics},
-         year = 2023,
-        month = jun,
-       volume = {674},
-          eid = {A1},
-        pages = {A1},
-          doi = {10.1051/0004-6361/202243940},
+% 3. Specifico per le Velocità Radiali (Katz et al.)
+@article{GaiaDR2,
+  author  = {{Gaia Collaboration} and {Brown}, A.~G.~A. and others},
+  title   = {{Gaia Data Release 2. Summary of the contents and survey properties}},
+  journal = {Astronomy \& Astrophysics},
+  year    = 2018,
+  volume  = {616},
+  eid     = {A1},
+  doi     = {10.1051/0004-6361/201833051}
 }
 
-% riferimenti per il LSR
-@article{Huang2015LSR,
-    author  = {Huang, Y. and others},
-    title   = {Determination of the local standard of rest using the LSS-GAC DR1},
-    journal = {MNRAS},
-    volume  = {449},
-    number  = {1},
-    pages   = {162-174},
-    year    = {2015},
-    doi     = {10.1093/mnras/stv204}
+% 4. Specifico per l'uso delle Parallassi (Luri et al.)
+@article{GaiaDR2Parallaxes,
+  author  = {{Luri}, X. and {Brown}, A.~G.~A. and others},
+  title   = {{Gaia Data Release 2. Using Gaia parallaxes}},
+  journal = {Astronomy \& Astrophysics},
+  year    = 2018,
+  volume  = {616},
+  eid     = {A9},
+  doi     = {10.1051/0004-6361/201832964}
+}
+
+% 5. L'archivio (come richiesto prima)
+@article{GaiaDR2RadialVelocities,
+  author  = {{Katz}, D. and {Sartoretti}, P. and others},
+  title   = {{Gaia Data Release 2. Properties and validation of the radial velocities}},
+  journal = {Astronomy \& Astrophysics},
+  year    = 2018,
+  volume  = {616},
+  eid     = {A5},
+  doi     = {10.1051/0004-6361/201833273}
+}
+
+% 6. Il rilascio dati DR3 (Sintesi)
+@article{GaiaDR3,
+  author  = {{Gaia Collaboration} and {Vallenari}, A. and {Brown}, A.~G.~A. and {Prusti}, T. and {de Bruijne}, J.~H.~J. and others},
+  title   = {{Gaia Data Release 3. Summary of the content and survey properties}},
+  journal = {Astronomy \& Astrophysics},
+  year    = 2023,
+  month   = jun,
+  volume  = {674},
+  eid     = {A1},
+  pages   = {A1},
+  doi     = {10.1051/0004-6361/202243940}
+}
+
+% velocità LSR accettate per il sole
+@article{GaiaMission2016,
+  author  = {{Gaia Collaboration} and {Prusti}, T. and others},
+  title   = {{The Gaia mission}},
+  journal = {Astronomy \& Astrophysics},
+  year    = 2016,
+  volume  = {595},
+  eid     = {A1},
+  doi     = {10.1051/0004-6361/201629272}
+}
+
+
+% velocità accettata v_rot
+@article{Jiao2023,
+  author  = {{Jiao}, Yongjun and {Hammer}, Fran{\c{c}}ois and {Wang}, Jianling and {Wang}, Haifeng and {Casamiquela}, Laia and {Randriamanakoto}, Zsofi and {Amram}, Philippe},
+  title   = {{Detection of the Keplerian decline in the Milky Way rotation curve}},
+  journal = {Astronomy \& Astrophysics},
+  year    = 2023,
+  month   = sep,
+  volume  = {678},
+  pages   = {A208},
+  doi     = {10.1051/0004-6361/202347513}
+}
+
+% massa accettata entro R_sole
+@article{Schonrich2010,
+  author  = {{Sch{\"o}nrich}, Ralph and {Binney}, James and {Dehnen}, Walter},
+  title   = {{Local solar motion: influence of radial gradients and angular momentum conservation}},
+  journal = {Monthly Notices of the Royal Astronomical Society},
+  year    = 2010,
+  month   = apr,
+  volume  = {403},
+  number  = {4},
+  pages   = {1829-1833},
+  doi     = {10.1111/j.1365-2966.2010.16253.x},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
 }

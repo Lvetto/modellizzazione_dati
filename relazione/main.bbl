@@ -19,6 +19,57 @@
 
 \refsection{0}
   \datalist[entry]{nty/global//global/global}
+    \entry{Eilers2019}{article}{}
+      \name{author}{4}{}{%
+        {{hash=b203afc51e465bbf61de46063a541822}{%
+           family={{Eilers}},
+           familyi={E\bibinitperiod},
+           given={Anna-Christina},
+           giveni={A\bibinithyphendelim C\bibinitperiod}}}%
+        {{hash=a78b8e911ca3f3ee978a4dfb1e7c1c90}{%
+           family={{Hogg}},
+           familyi={H\bibinitperiod},
+           given={David\bibnamedelima W.},
+           giveni={D\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+        {{hash=2772d8d2978c7131a245b5c446dc9632}{%
+           family={{Rix}},
+           familyi={R\bibinitperiod},
+           given={Hans-Walter},
+           giveni={H\bibinithyphendelim W\bibinitperiod}}}%
+        {{hash=f3914d8bfee5e6fff0eef2c0abb17862}{%
+           family={{Ness}},
+           familyi={N\bibinitperiod},
+           given={Melissa\bibnamedelima K.},
+           giveni={M\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+      }
+      \strng{namehash}{96f17adc85b1da90f115fd67b0884e7e}
+      \strng{fullhash}{b952e430a6c833999e7167bcf747a823}
+      \strng{bibnamehash}{96f17adc85b1da90f115fd67b0884e7e}
+      \strng{authorbibnamehash}{96f17adc85b1da90f115fd67b0884e7e}
+      \strng{authornamehash}{96f17adc85b1da90f115fd67b0884e7e}
+      \strng{authorfullhash}{b952e430a6c833999e7167bcf747a823}
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eid}{120}
+      \field{eprintclass}{astro-ph.GA}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{The Astrophysical Journal}
+      \field{month}{2}
+      \field{number}{1}
+      \field{title}{{The Circular Velocity Curve of the Milky Way from 5 to 25 kpc}}
+      \field{volume}{871}
+      \field{year}{2019}
+      \field{pages}{120}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.3847/1538-4357/aaf648
+      \endverb
+      \verb{eprint}
+      \verb 1810.09466
+      \endverb
+    \endentry
     \entry{GaiaDR2}{article}{}
       \true{moreauthor}
       \true{morelabelname}
@@ -83,35 +134,63 @@
       \verb 10.1051/0004-6361/201629272
       \endverb
     \endentry
-    \entry{Huang2015LSR}{article}{}
-      \true{moreauthor}
-      \true{morelabelname}
-      \name{author}{1}{}{%
-        {{hash=cae9da35ae12a6cbd407d07b86b4e18c}{%
-           family={Huang},
-           familyi={H\bibinitperiod},
-           given={Y.},
+    \entry{Jiao2023}{article}{}
+      \name{author}{7}{}{%
+        {{hash=33ce9433ad96abe995d6c37b258121ad}{%
+           family={{Jiao}},
+           familyi={J\bibinitperiod},
+           given={Yongjun},
            giveni={Y\bibinitperiod}}}%
+        {{hash=79f7bfddeca962fcb0d592d74df0a983}{%
+           family={{Hammer}},
+           familyi={H\bibinitperiod},
+           given={François},
+           giveni={F\bibinitperiod}}}%
+        {{hash=34577db2b010af0f60e1cfeaf9c9eeea}{%
+           family={{Wang}},
+           familyi={W\bibinitperiod},
+           given={Jianling},
+           giveni={J\bibinitperiod}}}%
+        {{hash=71e226050f533b77aad3b866c1b7ef0a}{%
+           family={{Wang}},
+           familyi={W\bibinitperiod},
+           given={Haifeng},
+           giveni={H\bibinitperiod}}}%
+        {{hash=affeb96423a467b5a07f24512fbd3617}{%
+           family={{Casamiquela}},
+           familyi={C\bibinitperiod},
+           given={Laia},
+           giveni={L\bibinitperiod}}}%
+        {{hash=1ae34a7e8a00cce9f9d509ddc7a91251}{%
+           family={{Randriamanakoto}},
+           familyi={R\bibinitperiod},
+           given={Zsofi},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=939f41b442d034a3ee3cf836b2cabc51}{%
+           family={{Amram}},
+           familyi={A\bibinitperiod},
+           given={Philippe},
+           giveni={P\bibinitperiod}}}%
       }
-      \strng{namehash}{163d2cf5fe8e59a79268f7871c4ee263}
-      \strng{fullhash}{163d2cf5fe8e59a79268f7871c4ee263}
-      \strng{bibnamehash}{163d2cf5fe8e59a79268f7871c4ee263}
-      \strng{authorbibnamehash}{163d2cf5fe8e59a79268f7871c4ee263}
-      \strng{authornamehash}{163d2cf5fe8e59a79268f7871c4ee263}
-      \strng{authorfullhash}{163d2cf5fe8e59a79268f7871c4ee263}
-      \field{sortinit}{H}
-      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \strng{namehash}{6275b027a9aad4eecc5565beb0a3b869}
+      \strng{fullhash}{6986b2704d83b2b0c28fec486dfe6d71}
+      \strng{bibnamehash}{6275b027a9aad4eecc5565beb0a3b869}
+      \strng{authorbibnamehash}{6275b027a9aad4eecc5565beb0a3b869}
+      \strng{authornamehash}{6275b027a9aad4eecc5565beb0a3b869}
+      \strng{authorfullhash}{6986b2704d83b2b0c28fec486dfe6d71}
+      \field{sortinit}{J}
+      \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{MNRAS}
-      \field{number}{1}
-      \field{title}{Determination of the local standard of rest using the LSS-GAC DR1}
-      \field{volume}{449}
-      \field{year}{2015}
-      \field{pages}{162\bibrangedash 174}
-      \range{pages}{13}
+      \field{journaltitle}{Astronomy \& Astrophysics}
+      \field{month}{9}
+      \field{title}{{Detection of the Keplerian decline in the Milky Way rotation curve}}
+      \field{volume}{678}
+      \field{year}{2023}
+      \field{pages}{A208}
+      \range{pages}{-1}
       \verb{doi}
-      \verb 10.1093/mnras/stv204
+      \verb 10.1051/0004-6361/202347513
       \endverb
     \endentry
     \entry{GaiaDR2RadialVelocities}{article}{}
@@ -180,6 +259,46 @@
       \field{year}{2018}
       \verb{doi}
       \verb 10.1051/0004-6361/201832964
+      \endverb
+    \endentry
+    \entry{Schonrich2010}{article}{}
+      \name{author}{3}{}{%
+        {{hash=b2732b363d14f41dcd0f0583824fcddb}{%
+           family={{Schönrich}},
+           familyi={S\bibinitperiod},
+           given={Ralph},
+           giveni={R\bibinitperiod}}}%
+        {{hash=7cb5734fc29a879adeda19d8fde85fc6}{%
+           family={{Binney}},
+           familyi={B\bibinitperiod},
+           given={James},
+           giveni={J\bibinitperiod}}}%
+        {{hash=08172063f9a620be25510b2531bc457a}{%
+           family={{Dehnen}},
+           familyi={D\bibinitperiod},
+           given={Walter},
+           giveni={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{45faf8ef9914a59bc7a66980921b9997}
+      \strng{fullhash}{45faf8ef9914a59bc7a66980921b9997}
+      \strng{bibnamehash}{45faf8ef9914a59bc7a66980921b9997}
+      \strng{authorbibnamehash}{45faf8ef9914a59bc7a66980921b9997}
+      \strng{authornamehash}{45faf8ef9914a59bc7a66980921b9997}
+      \strng{authorfullhash}{45faf8ef9914a59bc7a66980921b9997}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Monthly Notices of the Royal Astronomical Society}
+      \field{month}{4}
+      \field{number}{4}
+      \field{title}{{Local solar motion: influence of radial gradients and angular momentum conservation}}
+      \field{volume}{403}
+      \field{year}{2010}
+      \field{pages}{1829\bibrangedash 1833}
+      \range{pages}{5}
+      \verb{doi}
+      \verb 10.1111/j.1365-2966.2010.16253.x
       \endverb
     \endentry
   \enddatalist

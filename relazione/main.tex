@@ -31,7 +31,7 @@
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{6pt}   % risistemare alla fine!!!!
 
-\title{Relazione 1}
+\title{Relazione 1, Gruppo G}
 
 \author{
 Luca Vettore, Enrico Vianelli, Lorenzo Zanoli
@@ -51,14 +51,13 @@ Lo scopo di questa analisi è quello di determinare attraverso tecniche di infer
 
 Questo lavoro si basa su dati forniti dalla missione {\it Gaia} \cite{GaiaMission2016} (\url{https://www.cosmos.esa.int/gaia}) del European Space Agency (ESA), processati dal {\it Gaia} Data Processing and Analysis Consortium (DPAC, \url{https://www.cosmos.esa.int/web/gaia/dpac/consortium}). I fondi per il DPAC sono stati forniti da istituzioni nazionali, in particolare le istituzioni partecipanti al {\it Gaia} Multilateral Agreement.
 
-% controllare siano davvero 3 milioni!!!
-In particolare, abbiamo utilizzato i dati della seconda release (DR2) di {\it Gaia} \cite{GaiaDR2}, \cite{GaiaDR2Parallaxes}, \cite{GaiaDR2RadialVelocities} che includono informazioni su $3000000$ di stelle della via lattea. La nostra analisi utilizza la latitudine $l$ e longitudine $b$ galattica, la parallasse $\varpi$ e la velocità lungo la linea di vista $V_{rad}$, con i relativi errori.
+In particolare, abbiamo utilizzato i dati della seconda release (DR2) di {\it Gaia} \cite{GaiaDR2}, \cite{GaiaDR2Parallaxes}, \cite{GaiaDR2RadialVelocities} che includono informazioni su un gran numero di stelle della via lattea. La nostra analisi utilizza la latitudine e longitudine galattica, la parallasse e la velocità lungo la linea di vista, con i relativi errori.
 
 
 \section{Metodologia}
 
 \subsection{Le coordinate galattiche e i parametri cinematici}
-L'analisi utilizza il sistema di coordinate galattiche, cioè un sistema di coordinate sferiche centrato sul sole in cui la longitudine $l$ è misurata a partire dal centro galattico (CG) e la latitudine $b$ misura l'angolo di elevazione rispetto al piano galattico.
+L'analisi utilizza il sistema di coordinate galattiche, cioè un sistema di coordinate sferiche centrato sul Sole in cui la longitudine $l$ è misurata a partire dal centro galattico (CG) e la latitudine $b$ misura l'angolo di elevazione rispetto al piano galattico.
 
 La parallasse $\varpi$ rappresenta lo spostamento apparente di una stella quando osservata da punti opposti dell'obita terrestre e permette di stimare la distanza $d$ della stella attraverso la relazione $d = 1/\varpi$ (con $\varpi$ espressa in arcosecondi e $d$ in parsec).
 
@@ -67,23 +66,22 @@ La velocità del sole rispetto al LSR è rappresentata dalle componenti ($U_\odo
 
 \subsection{Il modello fisico}
 
-% capire se mettiamo la versione 2D, 3D o entrambe
-In questo modello semplificato assumiamoche tutte le stelle abbiano una velocità media puramente tangenziale. Inoltre assumiamo che tutte le stelle si muovano con la stessa velocità tangenziale $V_{rot}$, indipendentemente dalla loro distanza dal CG.
+In questo modello semplificato assumiamo che tutte le stelle abbiano una velocità media puramente tangenziale. Inoltre assumiamo che tutte le stelle si muovano con la stessa velocità tangenziale $V_{rot}$, indipendentemente dalla loro distanza dal CG.
 
-I dati {\it Gaia} includono la velocità radiale $V_{rad}$, che è la componente della velocità di una stella lungo la linea di vista. Questa velocità può essere modellata come la somma di due componenti: una dovuta al moto peculiare del sole rispetto al LSR, $V_{rad}^{LSR}$, e una dovuta alla rotazione della galassia, $V_{rad}^{ROT}$. 
+I dati {\it Gaia} includono la velocità radiale $V_{rad}$, che è la componente della velocità di una stella lungo la linea di vista. Questa velocità può essere modellata come la somma di due componenti: una dovuta al moto del Sole rispetto al LSR, $V_{rad}^{LSR}$, e una dovuta alla rotazione della galassia, $V_{rad}^{ROT}$. 
 
-Limitandoci al piano galattico ($b=0$), il contributo della rotazione galattica può essere calcolato passando per la differenza di velocità angolare tra la stella in esame e il sole:
+Limitandoci al piano galattico ($b\simeq 0$), il contributo di $V_{rot}$ in $V_{rad}$ può essere calcolato passando per la differenza di velocità angolare tra la stella in esame e il Sole:
 
-\[ \Delta\omega = \left(\frac{V_{rot}}{R_\odot} - \frac{V_{rot}}{R_i}\right) \Rightarrow V_{rot}^{rel} = \Delta\omega \cdot R_i \].
+\[ \Delta\omega = \left(\frac{V_{rot}}{R_i} - \frac{V_{rot}}{R_\odot}\right) \quad \text{e} \quad V_{rot}^{rel} = \Delta\omega \cdot R_i. \]
 
-Dove $R_\odot\simeq 8.12$ kpc è la distanza del sole dal CG e $R_i$ è la distanza della stella i-esima dal CG.
+Dove $R_\odot= 8.12 \pm 0.03$ kpc è la distanza del Sole dal CG e $R_i$ è la distanza della stella i-esima dal CG.
 
 I valori di $R_i$ e $V_{rad}^{ROT}$ possono essere ricavati dalla geometria del sistema, come mostrato in Figura \ref{fig:measures}, ottenendo le relazioni:
 
 \[ R_i = \sqrt{d^2+R_\odot^2 - 2dR_\odot\cos(l)} \] e
 \[ V_{rad}^{ROT} = V_{rot} \left( \frac{R_\odot}{R_i} - 1 \right) \sin(l). \]
 
-Il contributo dovuto al moto peculiare del sole rispetto al LSR, $V_{rad}^{LSR}$, può essere calcolato proiettando le componenti della velocità del sole lungo la linea di vista:
+Il contributo dovuto al moto del Sole rispetto al LSR, $V_{rad}^{LSR}$, può essere calcolato proiettando le componenti della velocità del Sole lungo la linea di vista:
 \[ V_{rad}^{LSR} = U_\odot \cos(l) + V_\odot \sin(l). \]
 
 L'estensione del modello al caso tridimensionale, con $b \neq 0$, è immediata e porta a modificare le formule di $V_{rad}^{LSR}$ e $V_{rad}^{ROT}$ introducendo i fattori $\cos(b)$ e $\sin(b)$ per tenere conto della latitudine galattica. In particolare, si ottiene:
@@ -146,44 +144,41 @@ L'estensione del modello al caso tridimensionale, con $b \neq 0$, è immediata e
         
         
     \end{tikzpicture}
-    % aggiungere qualche dettaglio in didascalia. In particolare le relazioni usate per gli angoli e magari un minimo di trigonometria.
     \caption{Costruzione geometrica per il calcolo delle velocità nel piano galattico. Dal teorema dei coseni si ottiene $R_i$, essendo noti $l$, $R_\odot$ e avendo calcolato $d$ dalla parallasse. Gli angoli $\alpha$ e $\beta$ sono complementari, dunque $cos(\beta) = sin(\alpha) = \frac{R_\odot}{R_i}sin(l)$, e $V_{rot}^{rel}=V^{ROT}_{rad}cos(\beta)$.}\label{fig:measures}
     
 \end{figure}
 
-% controllare anche i nomi delle sezioni. Un'opzione forse migliore sarebbe fare una sezione modello divisa in modello fisico e modello statistico.
+
 \subsection{Analisi statistica: MCMC e inferenza bayesiana}
 Per stimare i parametri del modello, abbiamo applicato una procedura di inferenza bayesiana basata su Markov Chain Monte Carlo (MCMC), implementata attraverso la libreria \texttt{emcee}. L'obiettivo è quello di campionare la distribuzione a posteriori dei parametri $V_{rot}$, $U_\odot$, $V_\odot$ e $W_\odot$ dato il dataset di {\it Gaia}.
 
-Come funzione di verosimiglianza è stata usata una Gaussiana, definita assumendo errori gaussiani indipendenti sui dati di $V_{rad}$ forniti da {\it Gaia}. La deviazione standard totale $\sigma_{tot}$ è stata calcolata combinando l'errore riportato dal dataset e l'incertezza derivante dalla misura della parallasse, attraverso la formula:
+Come funzione di verosimiglianza abbiamo usato una distribuzione Gaussiana, definita assumendo errori gaussiani indipendenti sui dati di $V_{rad}$ forniti da {\it Gaia}. La deviazione standard totale $\sigma_{tot}$ è stata calcolata combinando l'errore riportato dal dataset e l'incertezza derivante dalla misura della parallasse, attraverso la formula:
 \[ \sigma_{tot} = \sqrt{\sigma_{Gaia}^2 + \left( \frac{\partial V_{rad}}{\partial \varpi} \sigma_\varpi \right)^2}. \]
-% vogliamo aggiungere anche la sigma intrinsenca che avevamo messo all'inizio? A questo punto sarebbe solo un termine additivo e un parametro in più nell'inferenza
+
 
 Il valore di $\frac{\partial V_{rad}}{\partial \varpi}$ dipende da $V_{rot}$. Per questo motivo abbiamo diviso l'analisi in due fasi:
 \begin{itemize}
-    \item Nella prima fase abbiamo inizializzato i walker con valori casuali \cite{Huang2015LSR} (propagando l'errore usando un valore fissato di $V^*_{rot} = 100 km/s$). Lo scopo di questa fase è quello di identificare la zona ad alta probabilità della distribizione a posteriori e permettere una stima più accurata di $V^*_{rot}$ da usare nella seconda fase.
-    \item La seconda fase, più lunga, inizializza i walker secondo la distribuzione a posteriori ottenuta nella prima e utilizza la stima di $V^*_{rot}$ per calcolare $\sigma_{tot}$ in modo più accurato.
+    \item Nella prima fase abbiamo inizializzato $32$ walkers con valori arbitrari dei parametri (propagando l'errore usando un valore fissato di $V^*_{rot} = 100$~km/s, con ordine di grandezza in accordo con la dispersione delle velocità radiali dei dati). Lo scopo di questa fase è quello di identificare la zona ad alta probabilità della distribuzione a posteriori e permettere una stima più accurata di $V^*_{rot}$ da usare nella seconda fase. In questa prima run abbiamo eseguito $200$ iterazioni.
+    \item La seconda fase, più lunga, inizializza $32$ walkers  secondo la distribuzione a posteriori ottenuta nella prima e utilizza la nuova stima di $V^*_{rot}$ per calcolare $\sigma_{tot}$ in modo più accurato. In questa fase, la simulazione MCMC è stata condotta con $5000$ iterazioni, permettendo una stima più accurata dei parametri e delle loro incertezze.
 \end{itemize}
 
 Il prior in entrambi i casi è stato scelto come uniforme, con i seguenti intervalli di validità:
 \begin{itemize}
-    \item $V_{rot} \in [0, 400]$ km/s
-    \item $U_\odot, V_\odot, W_\odot \in [-50, 50]$ km/s
+    \item $V_{rot} \in [0, 400]$ km/s;
+    \item $U_\odot, V_\odot, W_\odot \in [-50, 50]$ km/s.
 \end{itemize}
 
-La simulazione MCMC è stata condotta con $32$ walker e $5000$ iterazioni. L'analisi dei risultati è stata condotta calcolando il tempo di autocorrelazione $\tau$ per ogni parametro, scartando i dati iniziali per un intervallo di burn-in pari a $2\tau$ e applicando un thinning di $0.5\tau$ per eliminare la ridondanza statistica. I parametri ottimali sono stati estratti come mediana della distribuzione a posteriori, mentre le incertezze sono state stimate tramite il 16° e l'84° percentile, fornendo un intervallo di confidenza al 68\%.
+L'analisi dei risultati è stata condotta calcolando il tempo di autocorrelazione $\tau$ per ogni parametro, scartando i dati iniziali per un intervallo di burn-in pari a $2\tau$ e applicando un thinning di $0.5\tau$ per eliminare la ridondanza statistica. I parametri ottimali sono stati estratti come mediana della distribuzione a posteriori, mentre le incertezze sono state stimate tramite il 16° e l'84° percentile, fornendo un intervallo di confidenza al 68\%.
 
 
 \section{Risultati}
 I risultati ottenuti per i parametri $V_{rot}$, $U_\odot$, $V_\odot$ e $W_\odot$ sono riportati in Tabella \ref{tab:risultati_mcmc} e in Figura \ref{Corner_plot} sono riportati i \textit{corner plot} ottenuti dall'inferenza sui parametri tramite MCMC.
 
-Notiamo che i valori delle velocità del sole rispetto al LSR sono negativi, a causa della scelta del sistema di coordinate usato.
+Notiamo che i valori delle velocità del Sole rispetto al LSR sono negativi, a causa della scelta del sistema di coordinate usato.
 
-I valori ottenuti sono in accordo con le stime presenti in letteratura, che indicano una velocità di rotazione del sole attorno al CG di circa $220$ km/s e velocità peculiari del sole rispetto al LSR dell'ordine di $10$ km/s per $U_\odot$, $20$ km/s per $V_\odot$ e $7$ km/s per $W_\odot$. Tuttavia, è importante notare che i valori ottenuti presentano incertezze molto piccole, il che potrebbe essere indicativo di un errore sistematico non considerato nel modello o di una sottostima dell'incertezza nei dati di {\it Gaia}. % infatti potrebbe valere la pena fare una run con una sigma aggiuntiva e vedere se abbiamo risutlati più sensati.
-% serve anche trovare qualche reference da citare per i valori accettati
+I valori ottenuti sono in accordo con le stime presenti in letteratura, che indicano una velocità di rotazione del Sole attorno al CG di circa $220$ km/s \cite{Eilers2019} e velocità peculiari del Sole rispetto al LSR dell'ordine di $10$ km/s \cite{Schonrich2010}. Tuttavia, è importante notare che i valori ottenuti presentano incertezze molto piccole, il che potrebbe essere indicativo di un errore sistematico non considerato nel modello o di una sottostima dell'incertezza nei dati di {\it Gaia}.
+% rieseguendo l'analisi con una sigma in più che tiene conto degli effetti ignorati, otteniamo dei risultati più sensati e degli errori ragionevoli. Per ora provato solo in 2D, domani se ho tempo lo faccio 3D e vediamo se vale la pena inserirlo
 
-% a me non sembrano i risultati corretti. Mi ricordo un 220km/s per la v_rot. Controllare!!
-% vogliamo mostrare i risultati per la versione 2d e 3d? in teoria 2d v_rot viene meglio
 \begin{table}[h!]
     \centering
     \caption{Risultati dell'analisi MCMC per i parametri $V_{rot}$, $U_\odot$, $V_\odot$ e $W_\odot$.}  
@@ -202,7 +197,7 @@ I valori ottenuti sono in accordo con le stime presenti in letteratura, che indi
     \end{tabular}
 \end{table}
 
-Confrontando la Figura \ref{mappa_gaia} e la Figura \ref{mappa_modello}, possiamo osservare che il modello riesce a catturare la struttura generale della mappa galattica delle velocità radiali, anche se presenta discrepanze. In particolare, il modello sembra sottostimare le velocità radiali in alcune regioni del cielo, suggerendo che potrebbero esserci ulteriori fattori, come i moti propri delle singole stelle, non considerati nel modello che influenzano le velocità radiali osservate. Infine in Figura \ref{Vrad_distribuzione} è riportata la distribuzione delle velocità radiali ottenuta dai dati di {\it Gaia} e dal nostro modello. Anche in questo caso, possiamo osservare che il modello riesce a catturare la forma generale della distribuzione, ma presenta discrepanze soprattutto nelle code della distribuzione. Queste discrepanze potrebbero essere indicative di un modello troppo semplificato, che non tiene conto di fattori come la dispersione delle velocità delle stelle o la presenza di strutture dinamiche nella galassia, come bracci a spirale o il bar centrale, che possono influenzare le velocità radiali osservate.
+Confrontando la Figura \ref{mappa_gaia} e la Figura \ref{mappa_modello}, possiamo osservare che il modello riesce a catturare la struttura generale della mappa galattica delle velocità radiali, anche se presenta discrepanze. In particolare, il modello sembra sottostimare le velocità radiali in alcune regioni del cielo, suggerendo che potrebbero esserci ulteriori fattori non considerati. In Figura \ref{Vrad_distribuzione} è riportata la distribuzione delle velocità radiali ottenuta dai dati di {\it Gaia} e dal nostro modello. Anche in questo caso, possiamo osservare che il modello riesce a catturare la forma generale della distribuzione, ma presenta discrepanze soprattutto nelle code della distribuzione. Queste discrepanze potrebbero essere indicative di un modello troppo semplificato, che non tiene conto di fattori come la dispersione delle velocità delle stelle o la presenza di strutture dinamiche nella galassia, come bracci a spirale, che possono influenzare le velocità.
 
 \begin{figure}[h!]
     \centering
@@ -229,18 +224,42 @@ Confrontando la Figura \ref{mappa_gaia} e la Figura \ref{mappa_modello}, possiam
     \label{Vrad_distribuzione}
     \centering
     \includegraphics[width=\linewidth]{../Distrubuzione_velocità_radiali.png}
-    \caption{Distribuzione delle velocità radiali ottenuta dai dati di {\it Gaia}(a sinistra) e dal nostro modello(a destra).}
+    \caption{Distribuzione delle velocità radiali ottenuta dai dati di {\it Gaia} (a sinistra) e dal nostro modello (a destra).}
 \end{figure}
-% rimangono da aggiungere un tot di grafici e tutta la bibliografia.
-% come grafici dovremmo mettere almeno:
-% - corner plot con i parametri
-% - mappa galattica, nostra vs Gaia
-% - v_rad nostre vs v_rad Gaia
-% - v_rot vs R con i nostri dati e quelli di Gaia? 
-% dovremmo avere tutto nei notebook in teoria
 
-% questa non lho ancora guardata
+
 \section{Stima della Massa Galattica}
+Sulla base dei parametri cinematici ottenuti, è possibile stimare la massa della Via Lattea racchiusa entro l'orbita solare ($M(< R_\odot)$). Assumendo che la distribuzione di massa totale (composta da stelle, gas e materia oscura) abbia una simmetria approssimativamente sferica, la prima legge di Newton implica che per un orbita circolare la forza gravitazionale debba essere uguale alla forza centripeta.
+Utilizzando quindi il valore di $V_{rot} = 204.03 \pm 0.15$ km/s ottenuto dal modello, si ricava la seguente stima per la massa racchiusa entro il raggio solare:
+\[ M\left( < R_\odot \right) = \frac{V_{rot}^2 R_\odot}{G} = (0.786 \pm 0.003) \cdot 10^{11} M_\odot, \]
+dove $G=6.6743 \times 10^{-11} \text{ m}^3 \text{kg}^{-1} \text{s}^{-2}$ e $M_\odot=1.9891\times 10^{30}$ kg. Questo risultato è in ottimo accordo con le stime recenti presenti in letteratura, che pongono la massa entro il raggio solare nell'intervallo $[0.7, 1.0] \cdot 10^{11} M_\odot$ \cite{Jiao2023}.
+
+È importante sottolineare che il nostro modello assume una curva di rotazione piatta ($V_{rot}$ indipendente da $R$). In un sistema puramente kepleriano, dove la massa è concentrata al centro (modello puntiforme), si avrebbe $V_{rot}\propto R^{-1/2}$. La persistenza di una velocità di rotazione costante implica che la massa racchiusa cresca linearmente con il raggio ($M(R) \propto R$). Questo scenario corrisponde a un profilo di densità spaziale del tipo $\rho(R) \propto R^{-2}$, tipico della sfera singolare isoterma. 
+Poiché la densità della materia barionica (stelle e gas) decade molto più rapidamente con il raggio, tale andamento fornisce una prova indiretta della presenza di un alone esteso di materia oscura che domina il potenziale gravitazionale anche nelle regioni interne della Galassia.
+
+\section{Conclusioni}
+Il modello presentato in questo lavoro permette di descrivere accuratamente gli aspetti generali della dinamica della Via Lattea.
+
+I valori trovati sono simili ai risultati accettati in letteratura, tuttavia le discrepanze osservate suggeriscono che il modello sia eccessivamente semplificato.
+In particolare non abbiamo considerato la dipendenza dal raggio della velocità di rotazione, la dispersione gaussiana di questa velocità e la presenza di moti propri e strutture dinamiche della Via Lattea.
+Notiamo infine che gli errori presentati sono molto piccoli, suggerendo una forte sottostima.
+
+
+
+\iffalse
+\section{Stima della Massa Galattica}
+Assumendo per semplicità che la massa della Galassia sia distribuita con simmetria sferica (o trattandola come una massa puntiforme centrale per il Teorema dei Gusci di Newton), la forza gravitazionale deve equilibrare la forza centripeta necessaria per mantenere il Sole (e le stelle del LSR) in un'orbita circolare.
+Pertanto è possibile,  utilizzando il valore di $V_{rot}$ nella Tabella \ref{tab:risultati_mcmc}, fare una stima della massa della Galassia racchiusa nell'orbita del sole:
+\[ M\left( < R_\odot \right) = \frac{V_{rot}^2R_\odot}{G} = (0.786 \pm 0.003) \cdot 10^{11} M_\odot,\]
+dove $G=6.6743 \times 10^{-11} m^3 kg^{-1} s^{-2}$ è la costante di gravitazione universale e $M_\odot=1.9891\times 10^{30} kg$ è la massa solare.
+Questo valore è in linea con il valore accettato di $M\left( < R_\odot \right)\in\left[0.7, 1\right] \cdot 10^{11} M_\odot$ \cite{Jiao2023}.
+
+La $V_{rot}$ trovata non dipende da $R$, suggerendo quindi un andamento del tipo
+$ \rho(R) \propto R^{-2} $, non compatibile con una massa distribuita uniformemente nel disco galattico. Questo risultato suggerisce quindi la presenza di una distribuzione di materia non osservata (non barionica) estesa.
+
+\fi
+
+\iffalse
 Al fine di stimare la massa galattica, è stata introdotta una modifica nel codice, introducendo una dipendenza dal raggio nella formula per $V_{rot}$, che quindi diventa:
 \begin{equation}
     V_{rot}(R) = V_\odot\left( \frac{R}{R_\odot}\right)^\beta
@@ -250,7 +269,8 @@ $(V_\odot,U_\odot,W_\odot,\beta)$, è possibile determinare la legge di potenza 
 \begin{equation}
     M = R_G \frac{V_{rot}(R_G)^2}{G}
 \end{equation}
-Dove $R_G$ rappresenta il raggio della Via Lattea, considerato noto a $20kpc$ come in letteratura, e $G$ la costante di gravitazione universale. Inoltre, il parametro $\beta$ permette anche di inferire informazioni sul tipo di massa presente in Galassia. Nel modello kepleriano il valore aspettato è $\beta = 0.5$, coerente con una diminuzione delle velocità man mano che ci si allontana dal centro galattico. Valori diversi di $\beta$ indicano quindi una porzione di massa mancante, per giustificare la legge di potenza, che è comunemente interpretata come materia oscura. 
+Dove $R_G$ rappresenta il raggio della Via Lattea, considerato noto a $20kpc$ come in letteratura, e $G$ la costante di gravitazione universale. Inoltre, il parametro $\beta$ permette anche di inferire informazioni sul tipo di massa presente in Galassia. Nel modello kepleriano il valore aspettato è $\beta = 0.5$, coerente con una diminuzione delle velocità man mano che ci si allontana dal cen220tro galattico. Valori diversi di $\beta$ indicano quindi una porzione di massa mancante, per giustificare la legge di potenza, che è comunemente interpretata come materia oscura. 
+\fi
 
 \printbibliography
 
