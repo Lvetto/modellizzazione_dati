@@ -152,15 +152,14 @@ L'estensione del modello al caso tridimensionale, con $b \neq 0$, è immediata e
 \subsection{Analisi statistica: MCMC e inferenza bayesiana}
 Per stimare i parametri del modello, abbiamo applicato una procedura di inferenza bayesiana basata su Markov Chain Monte Carlo (MCMC), implementata attraverso la libreria \texttt{emcee}. L'obiettivo è quello di campionare la distribuzione a posteriori dei parametri $V_{rot}$, $U_\odot$, $V_\odot$ e $W_\odot$ dato il dataset di {\it Gaia}.
 
-Come funzione di verosimiglianza abbiamo usato distribuzione una Gaussiana, definita assumendo errori gaussiani indipendenti sui dati di $V_{rad}$ forniti da {\it Gaia}. La deviazione standard totale $\sigma_{tot}$ è stata calcolata combinando l'errore riportato dal dataset e l'incertezza derivante dalla misura della parallasse, attraverso la formula:
+Come funzione di verosimiglianza abbiamo usato una distribuzione Gaussiana, definita assumendo errori gaussiani indipendenti sui dati di $V_{rad}$ forniti da {\it Gaia}. La deviazione standard totale $\sigma_{tot}$ è stata calcolata combinando l'errore riportato dal dataset e l'incertezza derivante dalla misura della parallasse, attraverso la formula:
 \[ \sigma_{tot} = \sqrt{\sigma_{Gaia}^2 + \left( \frac{\partial V_{rad}}{\partial \varpi} \sigma_\varpi \right)^2}. \]
 
 
 Il valore di $\frac{\partial V_{rad}}{\partial \varpi}$ dipende da $V_{rot}$. Per questo motivo abbiamo diviso l'analisi in due fasi:
-% sistemare reference spiegando il guess iniziale
 \begin{itemize}
-    \item Nella prima fase abbiamo inizializzato $32$ walkers con valori arbitrari dei parametri(propagando l'errore usando un valore fissato di $V^*_{rot} = 100 km/s$, con ordine di grandezza in accordo con la dispersione delle velocità radiali dei dati). Lo scopo di questa fase è quello di identificare la zona ad alta probabilità della distribuzione a posteriori e permettere una stima più accurata di $V^*_{rot}$ da usare nella seconda fase. In questa prima run abbiamo usato $200$ iterazioni.
-    \item La seconda fase, più lunga, inizializza $32$ walkers  secondo la distribuzione a posteriori ottenuta nella prima e utilizza la stima di $V^*_{rot}$ per calcolare $\sigma_{tot}$ in modo più accurato. In questa fase, la simulazione MCMC è stata condotta con $5000$ iterazioni, permettendo una stima più accurata dei parametri e delle loro incertezze.
+    \item Nella prima fase abbiamo inizializzato $32$ walkers con valori arbitrari dei parametri (propagando l'errore usando un valore fissato di $V^*_{rot} = 100 km/s$, con ordine di grandezza in accordo con la dispersione delle velocità radiali dei dati). Lo scopo di questa fase è quello di identificare la zona ad alta probabilità della distribuzione a posteriori e permettere una stima più accurata di $V^*_{rot}$ da usare nella seconda fase. In questa prima run abbiamo eseguito $200$ iterazioni.
+    \item La seconda fase, più lunga, inizializza $32$ walkers  secondo la distribuzione a posteriori ottenuta nella prima e utilizza la nuova stima di $V^*_{rot}$ per calcolare $\sigma_{tot}$ in modo più accurato. In questa fase, la simulazione MCMC è stata condotta con $5000$ iterazioni, permettendo una stima più accurata dei parametri e delle loro incertezze.
 \end{itemize}
 
 Il prior in entrambi i casi è stato scelto come uniforme, con i seguenti intervalli di validità:
@@ -230,7 +229,7 @@ Confrontando la Figura \ref{mappa_gaia} e la Figura \ref{mappa_modello}, possiam
 
 
 \section{Stima della Massa Galattica}
-Sulla base dei parametri cinematici ottenuti, è possibile stimare la massa della Via Lattea racchiusa entro l'orbita solare ($M_{< R_\odot}$). Assumendo che la distribuzione di massa totale (composta da stelle, gas e materia oscura) abbia una simmetria approssimativamente sferica, la prima legge di Newton implica che per un orbita circolare la forza gravitazionale debba essere uguale alla forza centripeta.
+Sulla base dei parametri cinematici ottenuti, è possibile stimare la massa della Via Lattea racchiusa entro l'orbita solare ($M(< R_\odot)$). Assumendo che la distribuzione di massa totale (composta da stelle, gas e materia oscura) abbia una simmetria approssimativamente sferica, la prima legge di Newton implica che per un orbita circolare la forza gravitazionale debba essere uguale alla forza centripeta.
 Utilizzando quindi il valore di $V_{rot} = 204.03 \pm 0.15$ km/s ottenuto dal modello, si ricava la seguente stima per la massa racchiusa entro il raggio solare:
 \[ M\left( < R_\odot \right) = \frac{V_{rot}^2 R_\odot}{G} = (0.786 \pm 0.003) \cdot 10^{11} M_\odot, \]
 dove $G=6.6743 \times 10^{-11} \text{ m}^3 \text{kg}^{-1} \text{s}^{-2}$ e $M_\odot=1.9891\times 10^{30}$ kg. Questo risultato è in ottimo accordo con le stime recenti presenti in letteratura, che pongono la massa entro il raggio solare nell'intervallo $[0.7, 1.0] \cdot 10^{11} M_\odot$ \cite{Jiao2023}.
