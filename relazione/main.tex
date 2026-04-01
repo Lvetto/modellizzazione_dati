@@ -59,7 +59,7 @@ In particolare, abbiamo utilizzato i dati della seconda release (DR2) di {\it Ga
 \subsection{Le coordinate galattiche e i parametri cinematici}
 L'analisi utilizza il sistema di coordinate galattiche, cioè un sistema di coordinate sferiche centrato sul Sole in cui la longitudine $l$ è misurata a partire dal centro galattico (CG) e la latitudine $b$ misura l'angolo di elevazione rispetto al piano galattico.
 
-La parallasse $\varpi$ rappresenta lo spostamento apparente di una stella quando osservata da punti opposti dell'obita terrestre e permette di stimare la distanza $d$ della stella attraverso la relazione $d = 1/\varpi$ (con $\varpi$ espressa in arcosecondi e $d$ in parsec).
+La parallasse $\varpi$ permette di stimare la distanza $d$ della stella dal sistema solare attraverso la relazione $d = 1/\varpi$ (con $\varpi$ espressa in milliarcosecondi e $d$ in kpc).
 
 La velocità del sole rispetto al LSR è rappresentata dalle componenti ($U_\odot$, $V_\odot$, $W_\odot$), dove $U_\odot$ è la componente radiale (verso il CG), $V_\odot$ è la componente tangenziale (nella direzione di rotazione) e $W_\odot$ è la componente verticale (verso il polo nord galattico). La velocità di rotazione $V_{rot}$ rappresenta la velocità tangenziale media delle stelle attorno al CG.
 
@@ -231,10 +231,10 @@ Confrontando la Figura \ref{mappa_gaia} e la Figura \ref{mappa_modello}, possiam
 \section{Stima della Massa Galattica}
 Sulla base dei parametri cinematici ottenuti, è possibile stimare la massa della Via Lattea racchiusa entro l'orbita solare ($M(< R_\odot)$). Assumendo che la distribuzione di massa totale (composta da stelle, gas e materia oscura) abbia una simmetria approssimativamente sferica, la prima legge di Newton implica che per un orbita circolare la forza gravitazionale debba essere uguale alla forza centripeta.
 Utilizzando quindi il valore di $V_{rot} = 204.03 \pm 0.15$ km/s ottenuto dal modello, si ricava la seguente stima per la massa racchiusa entro il raggio solare:
-\[ M\left( < R_\odot \right) = \frac{V_{rot}^2 R_\odot}{G} = (0.786 \pm 0.003) \cdot 10^{11} M_\odot, \]
+\[ M\left( < R_\odot \right) = \frac{V_{rot}^2 R_\odot}{G} = (0.833 \pm 0.003) \cdot 10^{11} M_\odot, \]
 dove $G=6.6743 \times 10^{-11} \text{ m}^3 \text{kg}^{-1} \text{s}^{-2}$ e $M_\odot=1.9891\times 10^{30}$ kg. Questo risultato è in ottimo accordo con le stime recenti presenti in letteratura, che pongono la massa entro il raggio solare nell'intervallo $[0.7, 1.0] \cdot 10^{11} M_\odot$ \cite{Jiao2023}.
 
-È importante sottolineare che il nostro modello assume una curva di rotazione piatta ($V_{rot}$ indipendente da $R$). In un sistema puramente kepleriano, dove la massa è concentrata al centro (modello puntiforme), si avrebbe $V_{rot}\propto R^{-1/2}$. La persistenza di una velocità di rotazione costante implica che la massa racchiusa cresca linearmente con il raggio ($M(R) \propto R$). Questo scenario corrisponde a un profilo di densità spaziale del tipo $\rho(R) \propto R^{-2}$, tipico della sfera singolare isoterma. 
+È importante sottolineare che il nostro modello assume una curva di rotazione piatta ($V_{rot}$ indipendente da $R$). In un sistema puramente kepleriano, dove la massa è concentrata al centro (modello puntiforme), si avrebbe $V_{rot}\propto R^{-1/2}$. La persistenza di una velocità di rotazione costante implica che la massa racchiusa cresca linearmente con il raggio ($M(R) \propto R$). Questo scenario corrisponde a un profilo di densità del tipo $\rho(R) \propto R^{-2}$. 
 Poiché la densità della materia barionica (stelle e gas) decade molto più rapidamente con il raggio, tale andamento fornisce una prova indiretta della presenza di un alone esteso di materia oscura che domina il potenziale gravitazionale anche nelle regioni interne della Galassia.
 
 \section{Conclusioni}
