@@ -1,15 +1,17 @@
 [0] Config.pm:307> INFO - This is Biber 2.19
 [0] Config.pm:310> INFO - Logfile is 'main.blg'
-[167] biber:340> INFO - === mer apr  1, 2026, 09:47:40
-[194] Biber.pm:419> INFO - Reading 'main.bcf'
-[281] Biber.pm:979> INFO - Found 5 citekeys in bib section 0
-[289] Biber.pm:4419> INFO - Processing section 0
-[295] Biber.pm:4610> INFO - Looking for bibtex file 'Bibliografia.bib' for section 0
-[295] bibtex.pm:1713> INFO - LaTeX decoding ...
-[301] bibtex.pm:1519> INFO - Found BibTeX data source 'Bibliografia.bib'
-[344] UCollate.pm:68> INFO - Overriding locale 'it-IT' defaults 'variable = shifted' with 'variable = non-ignorable'
-[344] UCollate.pm:68> INFO - Overriding locale 'it-IT' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[344] Biber.pm:4239> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'it-IT'
-[344] Biber.pm:4245> INFO - No sort tailoring available for locale 'it-IT'
-[347] bbl.pm:660> INFO - Writing 'main.bbl' with encoding 'UTF-8'
-[349] bbl.pm:763> INFO - Output to main.bbl
+[136] biber:340> INFO - === mer apr  1, 2026, 15:35:54
+[154] Biber.pm:419> INFO - Reading 'main.bcf'
+[208] Biber.pm:979> INFO - Found 6 citekeys in bib section 0
+[220] Biber.pm:4419> INFO - Processing section 0
+[228] Biber.pm:4610> INFO - Looking for bibtex file 'Bibliografia.bib' for section 0
+[229] bibtex.pm:1713> INFO - LaTeX decoding ...
+[239] bibtex.pm:1519> INFO - Found BibTeX data source 'Bibliografia.bib'
+[315] UCollate.pm:68> INFO - Overriding locale 'it-IT' defaults 'variable = shifted' with 'variable = non-ignorable'
+[315] UCollate.pm:68> INFO - Overriding locale 'it-IT' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[315] Biber.pm:4239> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'it-IT'
+[315] Biber.pm:4245> INFO - No sort tailoring available for locale 'it-IT'
+[326] bbl.pm:660> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[330] bbl.pm:763> INFO - Output to main.bbl
+[330] Biber.pm:131> WARN - legacy month field 'feb' in entry 'Reid_2014' is not an integer - this will probably not sort properly.
+[330] Biber.pm:133> INFO - WARNINGS: 1

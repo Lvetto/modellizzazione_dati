@@ -74,7 +74,7 @@ Limitandoci al piano galattico ($b\simeq 0$), il contributo di $V_{rot}$ in $V_{
 
 \[ \Delta\omega = \left(\frac{V_{rot}}{R_i} - \frac{V_{rot}}{R_\odot}\right) \quad \text{e} \quad V_{rot}^{rel} = \Delta\omega \cdot R_i. \]
 
-Dove $R_\odot= 8.12 \pm 0.03$ kpc è la distanza del Sole dal CG e $R_i$ è la distanza della stella i-esima dal CG.
+Dove $R_\odot= 8.34$ kpc è la distanza del Sole dal CG~\cite{Reid_2014} e $R_i$ è la distanza della stella i-esima dal CG.
 
 I valori di $R_i$ e $V_{rad}^{ROT}$ possono essere ricavati dalla geometria del sistema, come mostrato in Figura \ref{fig:measures}, ottenendo le relazioni:
 
@@ -176,7 +176,7 @@ I risultati ottenuti per i parametri $V_{rot}$, $U_\odot$, $V_\odot$ e $W_\odot$
 
 Notiamo che i valori delle velocità del Sole rispetto al LSR sono negativi, a causa della scelta del sistema di coordinate usato.
 
-I valori ottenuti sono in accordo con le stime presenti in letteratura, che indicano una velocità di rotazione del Sole attorno al CG di circa $220$ km/s \cite{Eilers2019} e velocità peculiari del Sole rispetto al LSR dell'ordine di $10$ km/s \cite{Schonrich2010}. Tuttavia, è importante notare che i valori ottenuti presentano incertezze molto piccole, il che potrebbe essere indicativo di un errore sistematico non considerato nel modello o di una sottostima dell'incertezza nei dati di {\it Gaia}.
+I valori ottenuti sono in accordo con le stime presenti in letteratura, che indicano una velocità di rotazione del Sole attorno al CG di circa $229$ km/s \cite{Eilers2019} e velocità peculiari del Sole rispetto al LSR dell'ordine di $10$ km/s \cite{Schonrich2010}. Tuttavia, è importante notare che i valori ottenuti presentano incertezze molto piccole, il che potrebbe essere indicativo di un errore sistematico non considerato nel modello o di una sottostima dell'incertezza nei dati di {\it Gaia}.
 % rieseguendo l'analisi con una sigma in più che tiene conto degli effetti ignorati, otteniamo dei risultati più sensati e degli errori ragionevoli. Per ora provato solo in 2D, domani se ho tempo lo faccio 3D e vediamo se vale la pena inserirlo
 
 \begin{table}[h!]
@@ -229,8 +229,27 @@ Confrontando la Figura \ref{mappa_gaia} e la Figura \ref{mappa_modello}, possiam
 
 
 \section{Stima della Massa Galattica}
+Sulla base dei parametri cinematici ottenuti, è possibile stimare la massa della Via Lattea racchiusa entro un certo raggio ($M(< R)$). Assumendo che la distribuzione di massa totale abbia una simmetria approssimativamente sferica, la prima legge di Newton implica che per un orbita circolare la forza gravitazionale debba essere uguale alla forza centripeta.
+Utilizzando quindi il valore di $V_{rot} = 211.61 \pm 0.15$ km/s ottenuto dal modello, si ricava la seguente stima per la massa racchiusa entro il raggio massimo raggiunto dalle stelle del campione $R_{max}=18.46$~kpc:
+\[ M\left( < R_{max} \right) = \frac{V_{rot}^2 R_{max}}{G} = 1.92 \cdot 10^{11} M_\odot, \]
+dove $G=6.6743 \times 10^{-11} \text{ m}^3 \text{kg}^{-1} \text{s}^{-2}$ e $M_\odot=1.9891\times 10^{30}$ kg. Questo risultato è in ottimo accordo con le stime recenti presenti in letteratura, che pongono la massa entro il raggio solare nell'intervallo $[1.93, 2.30] \cdot 10^{11} M_\odot$ \cite{Jiao2023}.
+
+È importante sottolineare che il nostro modello assume una curva di rotazione piatta ($V_{rot}$ indipendente da $R$). In un sistema puramente kepleriano, dove la massa è concentrata al centro (modello puntiforme), si avrebbe $V_{rot}\propto R^{-1/2}$. La persistenza di una velocità di rotazione costante implica che la massa racchiusa cresca linearmente con il raggio ($M(R) \propto R$). Questo scenario corrisponde a un profilo di densità del tipo $\rho(R) \propto R^{-2}$. 
+Poiché la densità della materia barionica (stelle e gas) decade molto più rapidamente con il raggio, tale andamento fornisce una prova indiretta della presenza di un alone esteso di materia oscura che domina il potenziale gravitazionale anche nelle regioni interne della Galassia.
+
+\section{Conclusioni}
+Il modello presentato in questo lavoro permette di descrivere accuratamente gli aspetti generali della dinamica della Via Lattea.
+
+I valori trovati sono simili ai risultati accettati in letteratura, tuttavia le discrepanze osservate suggeriscono che il modello sia eccessivamente semplificato.
+In particolare non abbiamo considerato la dipendenza dal raggio della velocità di rotazione, la dispersione gaussiana di questa velocità e la presenza di moti propri delle singole stelle e strutture dinamiche della Via Lattea.
+Notiamo infine che gli errori presentati sono molto piccoli, suggerendo una forte sottostima.
+
+
+
+\iffalse
+\section{Stima della Massa Galattica}
 Sulla base dei parametri cinematici ottenuti, è possibile stimare la massa della Via Lattea racchiusa entro l'orbita solare ($M(< R_\odot)$). Assumendo che la distribuzione di massa totale (composta da stelle, gas e materia oscura) abbia una simmetria approssimativamente sferica, la prima legge di Newton implica che per un orbita circolare la forza gravitazionale debba essere uguale alla forza centripeta.
-Utilizzando quindi il valore di $V_{rot} = 204.03 \pm 0.15$ km/s ottenuto dal modello, si ricava la seguente stima per la massa racchiusa entro il raggio solare:
+Utilizzando quindi il valore di $V_{rot} = 211.61 \pm 0.15$ km/s ottenuto dal modello, si ricava la seguente stima per la massa racchiusa entro il raggio solare:
 \[ M\left( < R_\odot \right) = \frac{V_{rot}^2 R_\odot}{G} = (0.833 \pm 0.003) \cdot 10^{11} M_\odot, \]
 dove $G=6.6743 \times 10^{-11} \text{ m}^3 \text{kg}^{-1} \text{s}^{-2}$ e $M_\odot=1.9891\times 10^{30}$ kg. Questo risultato è in ottimo accordo con le stime recenti presenti in letteratura, che pongono la massa entro il raggio solare nell'intervallo $[0.7, 1.0] \cdot 10^{11} M_\odot$ \cite{Jiao2023}.
 
@@ -241,21 +260,8 @@ Poiché la densità della materia barionica (stelle e gas) decade molto più rap
 Il modello presentato in questo lavoro permette di descrivere accuratamente gli aspetti generali della dinamica della Via Lattea.
 
 I valori trovati sono simili ai risultati accettati in letteratura, tuttavia le discrepanze osservate suggeriscono che il modello sia eccessivamente semplificato.
-In particolare non abbiamo considerato la dipendenza dal raggio della velocità di rotazione, la dispersione gaussiana di questa velocità e la presenza di moti propri e strutture dinamiche della Via Lattea.
+In particolare non abbiamo considerato la dipendenza dal raggio della velocità di rotazione, la dispersione gaussiana di questa velocità e la presenza di moti propri delle singole stelle e strutture dinamiche della Via Lattea.
 Notiamo infine che gli errori presentati sono molto piccoli, suggerendo una forte sottostima.
-
-
-
-\iffalse
-\section{Stima della Massa Galattica}
-Assumendo per semplicità che la massa della Galassia sia distribuita con simmetria sferica (o trattandola come una massa puntiforme centrale per il Teorema dei Gusci di Newton), la forza gravitazionale deve equilibrare la forza centripeta necessaria per mantenere il Sole (e le stelle del LSR) in un'orbita circolare.
-Pertanto è possibile,  utilizzando il valore di $V_{rot}$ nella Tabella \ref{tab:risultati_mcmc}, fare una stima della massa della Galassia racchiusa nell'orbita del sole:
-\[ M\left( < R_\odot \right) = \frac{V_{rot}^2R_\odot}{G} = (0.786 \pm 0.003) \cdot 10^{11} M_\odot,\]
-dove $G=6.6743 \times 10^{-11} m^3 kg^{-1} s^{-2}$ è la costante di gravitazione universale e $M_\odot=1.9891\times 10^{30} kg$ è la massa solare.
-Questo valore è in linea con il valore accettato di $M\left( < R_\odot \right)\in\left[0.7, 1\right] \cdot 10^{11} M_\odot$ \cite{Jiao2023}.
-
-La $V_{rot}$ trovata non dipende da $R$, suggerendo quindi un andamento del tipo
-$ \rho(R) \propto R^{-2} $, non compatibile con una massa distribuita uniformemente nel disco galattico. Questo risultato suggerisce quindi la presenza di una distribuzione di materia non osservata (non barionica) estesa.
 
 \fi
 

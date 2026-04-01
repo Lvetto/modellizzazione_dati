@@ -193,6 +193,119 @@
       \verb 10.1051/0004-6361/202347513
       \endverb
     \endentry
+    \entry{Reid_2014}{article}{}
+      \name{author}{16}{}{%
+        {{hash=f53632d7d3eb063693346bbf8548c5bd}{%
+           family={Reid},
+           familyi={R\bibinitperiod},
+           given={M.\bibnamedelimi J.},
+           giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=cf2e966ccbb7f75703b984676943c15a}{%
+           family={Menten},
+           familyi={M\bibinitperiod},
+           given={K.\bibnamedelimi M.},
+           giveni={K\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=35332dcfc65874bfc2fb8e6b07352784}{%
+           family={Brunthaler},
+           familyi={B\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=55fa2c0bd306ffe0a3c0604d00df9b65}{%
+           family={Zheng},
+           familyi={Z\bibinitperiod},
+           given={X.\bibnamedelimi W.},
+           giveni={X\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+        {{hash=f99126ff352009de384fa0caad8c7b9d}{%
+           family={Dame},
+           familyi={D\bibinitperiod},
+           given={T.\bibnamedelimi M.},
+           giveni={T\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=2efac453cb818e3e871c3147d9153d6d}{%
+           family={Xu},
+           familyi={X\bibinitperiod},
+           given={Y.},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=c84333257e5fef7e25ef4f7a4111077c}{%
+           family={Wu},
+           familyi={W\bibinitperiod},
+           given={Y.},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=14fd6c4762d5113df9a2a4c45d09c456}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={B.},
+           giveni={B\bibinitperiod}}}%
+        {{hash=5e438f2582cebfcb8efebfdb5dd8d6f8}{%
+           family={Sanna},
+           familyi={S\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=b166c29d03c7d656a1f4cc1f3a838517}{%
+           family={Sato},
+           familyi={S\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=6e9b75f022c563bbf655b11071405089}{%
+           family={Hachisuka},
+           familyi={H\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod}}}%
+        {{hash=e6ce33bc20e29beb4f5ddb7b656e0b0f}{%
+           family={Choi},
+           familyi={C\bibinitperiod},
+           given={Y.\bibnamedelimi K.},
+           giveni={Y\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+        {{hash=1bb0804ab788aa592d3744810e7cea56}{%
+           family={Immer},
+           familyi={I\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod}}}%
+        {{hash=c27cc7a8cc74d6d40513d3bcf3788391}{%
+           family={Moscadelli},
+           familyi={M\bibinitperiod},
+           given={L.},
+           giveni={L\bibinitperiod}}}%
+        {{hash=e749e284bca39bae077598eefbab4251}{%
+           family={Rygl},
+           familyi={R\bibinitperiod},
+           given={K.\bibnamedelimi L.\bibnamedelimi J.},
+           giveni={K\bibinitperiod\bibinitdelim L\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=4032c7766a423af19f98d41408665171}{%
+           family={Bartkiewicz},
+           familyi={B\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {The American Astronomical Society}%
+      }
+      \strng{namehash}{3f68fa1c4f85aef64d3f8973fca3c004}
+      \strng{fullhash}{02956f17234cc7598a747f1d64460cb8}
+      \strng{bibnamehash}{3f68fa1c4f85aef64d3f8973fca3c004}
+      \strng{authorbibnamehash}{3f68fa1c4f85aef64d3f8973fca3c004}
+      \strng{authornamehash}{3f68fa1c4f85aef64d3f8973fca3c004}
+      \strng{authorfullhash}{02956f17234cc7598a747f1d64460cb8}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{2}
+      \field{number}{2}
+      \field{title}{TRIGONOMETRIC PARALLAXES OF HIGH MASS STAR FORMING REGIONS: THE STRUCTURE AND KINEMATICS OF THE MILKY WAY}
+      \field{volume}{783}
+      \field{year}{2014}
+      \field{pages}{130}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1088/0004-637X/783/2/130
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1088/0004-637X/783/2/130
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1088/0004-637X/783/2/130
+      \endverb
+    \endentry
     \entry{Schonrich2010}{article}{}
       \name{author}{3}{}{%
         {{hash=b2732b363d14f41dcd0f0583824fcddb}{%
